@@ -1,4 +1,5 @@
 ---
+permalink: /vpn/
 ---
 # Удаленное подключение
 
@@ -106,23 +107,23 @@
 [pc2]: pc2 "О доверии"
 [exit]: exit "Завершение работы"
 
-[th-connect]: assets/images/connect_t.png
-[pic-connect]: assets/images/connect.png "Установить соединение (кликните для увеличения)"
-[th-2fa-setup]: assets/images/2fa-setup_t.png
-[pic-2fa-setup]: assets/images/2fa-setup.png "Настроить двухшаговую проверку (кликните для увеличения)"
-[th-30days]: assets/images/30days_t.png
-[pic-30days]: assets/images/30days.png "Код подтверждения (кликните для увеличения)"
-[th-connected]: assets/images/connected_t.png
-[pic-connected]: assets/images/connected.png "Вы подключены (кликните для увеличения)"
-[th-run]: assets/images/run_t.png
-[pic-run]: assets/images/run.png "Выполнить (кликните для увеличения)"
-[th-rdp]: assets/images/rdp_t.png
-[pic-rdp]: assets/images/rdp.png "Подключение к удаленному рабочему столу (кликните для увеличения)"
-[th-noreply]: assets/images/noreply_t.png
-[pic-noreply]: assets/images/noreply.png "Не удалось подключиться? (кликните для увеличения)"
-[th-trust]: assets/images/trust_t.png
-[pic-trust]: assets/images/trust.png "Вопрос о доверии (кликните для увеличения)"
-[th-user2]: assets/images/user2_t.png
-[pic-user2]: assets/images/user2.png "Введите учетные данные (кликните для увеличения)"
-[th-pc2]: assets/images/pc2_t.png
-[pic-pc2]: assets/images/pc2.png "Вопрос о доверии (кликните для увеличения)"
+[th-connect]: assets/img/connect_t.png
+[pic-connect]: assets/img/connect.png "Установить соединение (кликните для увеличения)"
+[th-2fa-setup]: assets/img/2fa-setup_t.png
+[pic-2fa-setup]: assets/img/2fa-setup.png "Настроить двухшаговую проверку (кликните для увеличения)"
+[th-30days]: assets/img/30days_t.png
+[pic-30days]: assets/img/30days.png "Код подтверждения (кликните для увеличения)"
+[th-connected]: assets/img/connected_t.png
+[pic-connected]: assets/img/connected.png "Вы подключены (кликните для увеличения)"
+[th-run]: assets/img/run_t.png
+[pic-run]: assets/img/run.png "Выполнить (кликните для увеличения)"
+[th-rdp]: assets/img/rdp_t.png
+[pic-rdp]: assets/img/rdp.png "Подключение к удаленному рабочему столу (кликните для увеличения)"
+[th-noreply]: assets/img/noreply_t.png
+[pic-noreply]: assets/img/noreply.png "Не удалось подключиться? (кликните для увеличения)"
+[th-trust]: assets/img/trust_t.png
+[pic-trust]: assets/img/trust.png "Вопрос о доверии (кликните для увеличения)"
+[th-user2]: assets/img/user2_t.png
+[pic-user2]: assets/img/user2.png "Введите учетные данные (кликните для увеличения)"
+[th-pc2]: assets/img/pc2_t.png
+[pic-pc2]: assets/img/pc2.png "Вопрос о доверии (кликните для увеличения)"

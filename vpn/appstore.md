@@ -17,6 +17,6 @@
 [download]: https://www.microsoft.com/ru-ru/account/authenticator "Microsoft Authenticator"
 [back]: index "Основная инструкция"
 
-[1]: assets/images/auth1.png "Установить"
-[2]: assets/images/auth2.png "Добавить запись"
-[3]: assets/images/auth3.png "Сканировать QR-код"
+[1]: assets/img/auth1.png "Установить"
+[2]: assets/img/auth2.png "Добавить запись"
+[3]: assets/img/auth3.png "Сканировать QR-код"

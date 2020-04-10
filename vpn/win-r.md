@@ -11,4 +11,4 @@
 
 [back]: index "Основная инструкция"
 
-[pic-win-r]: assets/images/win-r.jpg "Win+R"
+[pic-win-r]: assets/img/win-r.jpg "Win+R"

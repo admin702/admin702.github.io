@@ -14,4 +14,4 @@
 
 [back]: index "Основная инструкция"
 
-[pic-disconnect]: assets/images/disconnect.png "Разорвать соединение"
+[pic-disconnect]: assets/img/disconnect.png "Разорвать соединение"

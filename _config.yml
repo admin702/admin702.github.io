@@ -1,0 +1,18 @@
+permalink: /:path/
+
+defaults:
+  - 
+    scope:
+      path: "assets/img"
+    values:
+      image: true
+
+exclude:
+  - .gitignore
+  - README.md
+  - LICENSE
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+
+exclude: [vendor]
