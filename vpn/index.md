@@ -94,17 +94,17 @@
 
 [Как завершить работу?][exit]
 
-[download]: download.md "Скачать"
-[macos]: macos.md "На Макбуках"
-[IPSec]: ipsec.md "На планшетах"
-[appstore]: appstore.md "Authenticator"
+[download]: download "Скачать"
+[macos]: macos "На Макбуках"
+[IPSec]: ipsec "На планшетах"
+[appstore]: appstore "Authenticator"
 [TOTP Calculator]: TOTP.html "Генератор кодов"
-[2fa]: 2fa.md "Настройка двухшаговой проверки"
-[WinR]: win-r.md "Где найти Win+R"
-[noreply]: noreply.md "Не удалось подключиться"
-[trust]: trust.md "О доверии"
-[pc2]: pc2.md "О доверии"
-[exit]: exit.md "Завершение работы"
+[2fa]: 2fa "Настройка двухшаговой проверки"
+[WinR]: win-r "Где найти Win+R"
+[noreply]: noreply "Не удалось подключиться"
+[trust]: trust "О доверии"
+[pc2]: pc2 "О доверии"
+[exit]: exit "Завершение работы"
 
 [th-connect]: assets/images/connect_t.png
 [pic-connect]: assets/images/connect.png "Установить соединение (кликните для увеличения)"

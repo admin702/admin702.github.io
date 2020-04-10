@@ -20,6 +20,6 @@
 
 [Назад][back]
 
-[back]: index.md "Основная инструкция"
+[back]: index "Основная инструкция"
 
 [pic-noreply]: assets/images/noreply.png "Не удалось подключиться"

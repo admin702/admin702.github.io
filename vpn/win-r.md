@@ -9,6 +9,6 @@
 
 [Назад][back]
 
-[back]: index.md "Основная инструкция"
+[back]: index "Основная инструкция"
 
 [pic-win-r]: assets/images/win-r.jpg "Win+R"

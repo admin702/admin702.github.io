@@ -46,10 +46,10 @@
 
 [Назад][back]
 
-[appstore]: appstore.md "Authenticator"
+[appstore]: appstore "Authenticator"
 [TOTP Calculator]: TOTP.html "Генератор кодов"
-[exit]: exit.md "Завершение работы"
-[back]: index.md "Основная инструкция"
+[exit]: exit "Завершение работы"
+[back]: index "Основная инструкция"
 
 [pic-2fa-setup]: assets/images/2fa-setup.png "Настроить"
 [pic-qr]: assets/images/qr.png "QR"

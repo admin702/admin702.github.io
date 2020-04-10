@@ -10,6 +10,6 @@
 
 [Назад][back]
 
-[back]: index.md "Основная инструкция"
+[back]: index "Основная инструкция"
 
 [pic-trust]: assets/images/trust.png "Вы доверяете?"

@@ -10,6 +10,6 @@
 
 [Назад][back]
 
-[back]: index.md "Основная инструкция"
+[back]: index "Основная инструкция"
 
 [pic-pc2]: assets/images/pc2.png "Не удается проверить..."
