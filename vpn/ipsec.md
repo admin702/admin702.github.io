@@ -2,6 +2,8 @@
 ---
 # Настройка стандартных клиентов IPSec
 
+Здесь собраны отличия от общей [инструкции][back].
+
 Вам необходимо знать несколько индивидуальных учетных данных, которые надо получить в ИТ-отделе и далее подставлять их значения по тексту:
 
 1. `Соединение`
@@ -57,7 +59,7 @@
 
 Установить **Microsoft Remote Desktop**.
 
-Читать о нем для разных платформ на сайте Microsoft - <https://docs.microsoft.com/ru-ru/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients>
+[Читать о нем для разных платформ на сайте Microsoft.][RD clients]
 
 Ввести:
 
@@ -68,4 +70,5 @@
 [Назад][back]
 
 [2fa]: 2fa "Настройка двухшаговой проверки"
+[RD clients]: https://docs.microsoft.com/ru-ru/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients "Клиенты RDP"
 [back]: /vpn "Основная инструкция"
