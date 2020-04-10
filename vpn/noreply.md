@@ -20,6 +20,6 @@
 
 [Назад][back]
 
-[back]: index "Основная инструкция"
+[back]: /vpn "Основная инструкция"
 
 [pic-noreply]: assets/img/noreply.png "Не удалось подключиться"

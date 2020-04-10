@@ -49,7 +49,7 @@
 [appstore]: appstore "Authenticator"
 [TOTP Calculator]: TOTP.html "Генератор кодов"
 [exit]: exit "Завершение работы"
-[back]: index "Основная инструкция"
+[back]: /vpn "Основная инструкция"
 
 [pic-2fa-setup]: assets/img/2fa-setup.png "Настроить"
 [pic-qr]: assets/img/qr.png "QR"

@@ -15,7 +15,7 @@
 [Назад][back]
 
 [download]: https://www.microsoft.com/ru-ru/account/authenticator "Microsoft Authenticator"
-[back]: index "Основная инструкция"
+[back]: /vpn "Основная инструкция"
 
 [1]: assets/img/auth1.png "Установить"
 [2]: assets/img/auth2.png "Добавить запись"

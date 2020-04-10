@@ -9,6 +9,6 @@
 
 [Назад][back]
 
-[back]: index "Основная инструкция"
+[back]: /vpn "Основная инструкция"
 
 [pic-win-r]: assets/img/win-r.jpg "Win+R"

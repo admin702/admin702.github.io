@@ -56,7 +56,7 @@
 [Назад][back]
 
 [download]: download "Скачать"
-[back]: index "Основная инструкция"
+[back]: /vpn "Основная инструкция"
 
 [pic-unblock]: assets/img/KerioVPN_Mac.jpg "Как разблокировать"
 [pic-connect-mac]: assets/img/connect-mac.png "Как подключиться"
