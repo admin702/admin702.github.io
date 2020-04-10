@@ -14,4 +14,4 @@
 
 [back]: /vpn "Основная инструкция"
 
-[pic-disconnect]: assets/img/disconnect.png "Разорвать соединение"
+[pic-disconnect]: /assets/img/disconnect.png "Разорвать соединение"

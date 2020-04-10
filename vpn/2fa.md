@@ -51,8 +51,8 @@
 [exit]: exit "Завершение работы"
 [back]: /vpn "Основная инструкция"
 
-[pic-2fa-setup]: assets/img/2fa-setup.png "Настроить"
-[pic-qr]: assets/img/qr.png "QR"
-[pic-TOTP]: assets/img/totp.png "Пример получения кода"
-[pic-activated]: assets/img/activated.png "Двухшаговая проверка настроена"
-[pic-30days]: assets/img/30days.png "Код подтверждения"
+[pic-2fa-setup]: /assets/img/2fa-setup.png "Настроить"
+[pic-qr]: /assets/img/qr.png "QR"
+[pic-TOTP]: /assets/img/totp.png "Пример получения кода"
+[pic-activated]: /assets/img/activated.png "Двухшаговая проверка настроена"
+[pic-30days]: /assets/img/30days.png "Код подтверждения"

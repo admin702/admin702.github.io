@@ -19,4 +19,4 @@
 [download]: https://www.gfi.com/products-and-solutions/network-security-solutions/kerio-control/resources/other-downloads/vpn
 [back]: /vpn "Основная инструкция"
 
-[pic-download]: assets/img/download.png "Kerio VPN Client"
+[pic-download]: /assets/img/download.png "Kerio VPN Client"

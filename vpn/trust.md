@@ -12,4 +12,4 @@
 
 [back]: /vpn "Основная инструкция"
 
-[pic-trust]: assets/img/trust.png "Вы доверяете?"
+[pic-trust]: /assets/img/trust.png "Вы доверяете?"

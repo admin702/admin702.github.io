@@ -22,4 +22,4 @@
 
 [back]: /vpn "Основная инструкция"
 
-[pic-noreply]: assets/img/noreply.png "Не удалось подключиться"
+[pic-noreply]: /assets/img/noreply.png "Не удалось подключиться"

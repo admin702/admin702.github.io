@@ -3,7 +3,7 @@ permalink: /:path/
 defaults:
   - 
     scope:
-      path: "assets/img"
+      path: /assets/img
     values:
       image: true
 
