@@ -47,7 +47,7 @@
 [Назад][back]
 
 [appstore]: appstore "Authenticator"
-[TOTP Calculator]: TOTP.html "Генератор кодов"
+[TOTP Calculator]: /TOTP.html "Генератор кодов"
 [exit]: exit "Завершение работы"
 [back]: /vpn "Основная инструкция"
 

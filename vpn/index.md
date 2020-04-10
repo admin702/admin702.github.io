@@ -99,7 +99,7 @@ permalink: /vpn/
 [macos]: macos "На Макбуках"
 [IPSec]: ipsec "На планшетах"
 [appstore]: appstore "Authenticator"
-[TOTP Calculator]: TOTP.html "Генератор кодов"
+[TOTP Calculator]: /TOTP.html "Генератор кодов"
 [2fa]: 2fa "Настройка двухшаговой проверки"
 [WinR]: win-r "Где найти Win+R"
 [noreply]: noreply "Не удалось подключиться"
