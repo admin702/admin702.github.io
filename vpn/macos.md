@@ -28,14 +28,14 @@
 
 В MacOS нет встроенной программы подключения к удаленному рабочему столу Windows. Рекомендуется установить бесплатную программу **Microsoft Remote Desktop**.
 
-Ввести в поле "PC name" `Шлюз`
+Ввести в поле "PC name" `Шлюз` (kerio...)
 
 ![pic-rdp-mac]
 
-А затем:
+А затем учетные данные Вашего рабочего компьютера (как на работе):
 
-* Username: `Имя пользователя 2`
-* Password: `Пароль 2`
+* Username: `Ваш логин`
+* Password: `Ваш пароль`
 
 ![pic-user2-mac]
 
@@ -55,7 +55,7 @@
 
 [Назад][back]
 
-[download]: download "Скачать"
+[download]: /vpn/download "Скачать"
 [back]: /vpn "Основная инструкция"
 
 [pic-unblock]: /assets/img/KerioVPN_Mac.jpg "Как разблокировать"

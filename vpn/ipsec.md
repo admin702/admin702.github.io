@@ -69,6 +69,6 @@
 
 [Назад][back]
 
-[2fa]: 2fa "Настройка двухшаговой проверки"
+[2fa]: /vpn/2fa "Настройка двухшаговой проверки"
 [RD clients]: https://docs.microsoft.com/ru-ru/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients "Клиенты RDP"
 [back]: /vpn "Основная инструкция"
