@@ -1,0 +1,98 @@
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>UUID v5 Calculator</title>        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv5.min.js"></script><!--(c) https://github.com/uuidjs-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <style>
+        h1 {
+            font-size: 120%;
+        }
+        h2 {
+            font-size: 100%;
+        }
+        .clearfix {
+            padding-bottom: 1em;
+        }
+
+        .table{
+        	border: 1px solid #eee;
+        	table-layout: fixed;
+        	//width: 100%;
+        	margin-bottom: 20px;
+        }
+        .table th {
+        	font-weight: bold;
+        	padding: 5px;
+        	background: #efefef;
+        	border: 1px solid #dddddd;
+        }
+        .table td {
+        	padding: 5px 10px;
+        	border: 1px solid #eee;
+        	text-align: left;
+        }
+        .table tbody tr:nth-child(odd) {
+        	background: #fff;
+        }
+        .table tbody tr:nth-child(even) {
+        	background: #F7F7F7;
+        }
+        .xlarge {
+        	font-size: 120%;
+        }
+        .fixed {
+        	font-family: Courier;
+        }
+        .gray {
+        	color: gray;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <div class="clearfix">
+                <label for="parent">Parent <span class="gray">(DNS: <script>document.write(uuidv5.DNS);</script>)</span>:</label>
+                <div class="input">
+                    <input type="text" size="60" name="parent" id="parent" class="fixed" value="" />
+                </div>
+            </div>
+            <div class="clearfix">
+                <label for="value">Value <span class="gray">(вставьте Ваш текст для получения ключа)</span>:</label>
+                <div class="input">
+                    <input type="text" size="100" name="value" id="value" class="xlarge fixed" value="?" />
+                </div>
+            </div>
+            <div class="clearfix">
+                <label>Key <span class="gray">(ключ Вашего текста)</span>:</label>
+                <div class="input">
+                    <span class="label label-primary fixed" id="uuid"></span>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    <script>
+        function updateUUID() {
+            var parent = $('#parent').val();
+            var value = $('#value').val();
+            var uuid = uuidv5(value, parent);
+            $('#uuid').text(uuid);
+            //navigator.clipboard.writeText(uuid);
+        }
+    
+        $(function () {
+            var parent = uuidv5(value, uuidv5.DNS);
+            $('#parent').text(parent);
+            updateUUID();
+            $('#parent').keyup(function () {
+                updateUUID();
+            });
+            $('#value').keyup(function () {
+                updateUUID();
+            });
+        });
+    </script>
+</body>
+</html>
