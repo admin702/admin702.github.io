@@ -54,15 +54,15 @@
     <form>
         <fieldset>
             <div class="clearfix">
-                <label for="parent">Parent <span class="gray">(DNS: <script>document.write(uuidv5.DNS);</script>)</span>:</label>
+                <label for="parent">Parent <span class="gray">(DNS: 6ba7b810-9dad-11d1-80b4-00c04fd430c8)</span>:</label>
                 <div class="input">
-                    <input type="text" size="60" name="parent" id="parent" class="fixed" value="" />
+                    <input type="text" size="60" name="parent" id="parent" class="fixed" value="6ba7b810-9dad-11d1-80b4-00c04fd430c8" />
                 </div>
             </div>
             <div class="clearfix">
                 <label for="value">Value <span class="gray">(вставьте Ваш текст для получения ключа)</span>:</label>
                 <div class="input">
-                    <input type="text" size="100" name="value" id="value" class="xlarge fixed" value="?" />
+                    <input type="text" size="100" name="value" id="value" class="xlarge fixed" value="" />
                 </div>
             </div>
             <div class="clearfix">
@@ -83,9 +83,6 @@
         }
     
         $(function () {
-            var parent = uuidv5(value, uuidv5.DNS);
-            $('#parent').text(parent);
-            updateUUID();
             $('#parent').keyup(function () {
                 updateUUID();
             });
