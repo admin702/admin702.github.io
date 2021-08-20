@@ -5,7 +5,7 @@
     <title>VPN Calculator</title>        
     <script>function calc(){
 var x=/(.+)@(..(.+)\..+)/;var e=document.getElementById("email").value;
-var s=`<li>mail.$2</li><li>$1</li><li>*VPN пароль</li><li>kerio.$2</li><li>$3\\$1</li><li>*Ваш пароль</li>`;
+var s=`<li>mail.$2</li><li>$1</li><li>*VPN пароль</li><li>mstsc /v:kerio.$2</li><li>$3\\$1</li><li>*Ваш пароль</li>`;
 var r=e.replace(x,s);document.getElementById("result").innerHTML=r;}</script>
     <style>li {margin:15px; font-size:120%;} li::marker {color:lightgray;}</style>
 </head>
