@@ -7,7 +7,7 @@
 
 <script>function calc(btn){
 var e=document.getElementById('email').value.trim();
-if(/^.+@...+\...+/.test(e)){var x=/(.+)@(..(.+)\...+)/;
+if(/^.+@...+\...+/.test(e)){var x=/(.+)@((..(.+))\...+)/;
 document.getElementById('pt').innerHTML='Ваши параметры';
 p0=e.replace(x,'$3');
 document.getElementById('i0').innerHTML=p0;
@@ -29,7 +29,7 @@ l4='https://'+p4+':4081//nonauth/totpVerify.cs';
 document.getElementById('l4').innerHTML=
 '<a target="_blank" href="'+l4+'">'+l4+'</a>';
 document.getElementById('p4').innerHTML=p4;
-document.getElementById('p5').innerHTML=e.replace(x,'$3\\$1');
+document.getElementById('p5').innerHTML=e.replace(x,'$4\\$1');
 document.getElementById('p6').innerHTML='Ваш пароль ***';
 btn.innerHTML='Готово!';
 }else{alert('Укажите email!');}}</script>
