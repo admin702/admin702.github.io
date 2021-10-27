@@ -8,8 +8,7 @@ permalink: /vpn/
 
 <script>function calc(btn){
 var e=document.getElementById('email').value;
-if(/^.+@...+\..+/.test(e)){
-var x=/(.+)@(..(.+)\..+)/;
+if(/^.+@...+\...+/.test(e)){var x=/(.+)@(..(.+)\...+)/;
 document.getElementById('pt').innerHTML='Ваши параметры';
 document.getElementById('p0').innerHTML=e.replace(x,'$3');
 document.getElementById('p1').innerHTML=e.replace(x,'mail.$2');
