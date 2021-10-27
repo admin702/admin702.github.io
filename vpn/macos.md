@@ -97,6 +97,8 @@ Password: | <span id="p6" class="code">Ваш пароль</span>
 
 ![pic-disconnect-mac]
 
+---
+
 [Назад][back]
 
 [download]: /vpn/download "Скачать"

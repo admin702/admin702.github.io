@@ -20,7 +20,8 @@ document.getElementById("p1i").innerHTML=e.replace(x,'mail.$2');
 document.getElementById("p1a").innerHTML=e.replace(x,'mail.$2');
 document.getElementById("p2").innerHTML=e.replace(x,'$1');
 document.getElementById("p3").innerHTML='VPN пароль ***';
-document.getElementById("p4w").innerHTML=e.replace(x,'https://kerio.$2:4081//nonauth/totpVerify.cs');
+document.getElementById("p4w").innerHTML=e.replace(x,'<a target="_blank"
+href="https://kerio.$2:4081//nonauth/totpVerify.cs">https://kerio.$2:4081//nonauth/totpVerify.cs</a>');
 document.getElementById("p4").innerHTML=e.replace(x,'kerio.$2');
 document.getElementById("p5").innerHTML=e.replace(x,'$3\\$1');
 document.getElementById("p6").innerHTML='Ваш пароль ***';
@@ -67,7 +68,7 @@ RSA SecurID: | <span class="code">выкл</span>
 Имя пользователя: | <span id="p2a" class="code">VPN логин</span>
 Пароль: | <span id="p3a" class="code">VPN пароль</span>
 
-[`x`] Сохранить учетные данные
+[<span class="code">x</span>] Сохранить учетные данные
 
 ## Этап 2. Двухшаговая проверка
 
@@ -94,6 +95,8 @@ VPN. Необходимо запустить браузер и открыть д
 Имя компьютера: | <span id="p4" class="code">Шлюз</span>
 Имя пользователя: | <span id="p5" class="code">Ваш логин</span>
 Пароль: | <span id="p6" class="code">Ваш пароль</span>
+
+---
 
 [Назад][back]
 

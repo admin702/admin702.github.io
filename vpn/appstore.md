@@ -18,6 +18,8 @@ Facebook и т.д.)":
 Вместо этой программы можно использовать любую другую с аналогичной функцией
 генерации кодов **TOTP** - FreeOTP, Google Authenticator, ...
 
+---
+
 [Назад][back]
 
 [download]: https://www.microsoft.com/ru-ru/account/authenticator "Microsoft Authenticator"
