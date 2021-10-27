@@ -28,7 +28,8 @@ document.getElementById("p6").innerHTML='Ваш пароль ***';
 <style>.code {
 background-color: brown; color: yellow; font-family: monospace; padding: 5px 15px;
 }</style>
-<input type="text" size="30" id="email" /><button onClick="calc(this);">Ввод</button>
+<input type="text" size="30" id="email" />
+<button onClick="calc(this);">Ввод</button>
 
 Также Вам надо узнать в ИТ-отделе назначенный Вам **VPN пароль** и **Общий ключ**.  
 А **Ваш пароль** от рабочего компьютера должны знать Вы сами.
@@ -39,7 +40,7 @@ background-color: brown; color: yellow; font-family: monospace; padding: 5px 15p
 
 Настройки – VPN – Добавить конфигурацию VPN...
 
-|||
+|| Параметр |
 ---|---
 Тип: | <span class="code">L2TP</span>
 Описание: | <span id="p0i" class="code">Название</span>
@@ -49,28 +50,24 @@ RSA SecurID: | <span class="code">выкл</span>
 Пароль: | <span id="p3i" class="code">VPN пароль</span>
 Общий ключ: | <span class="code">Общий ключ</span>
 Для всех данных: | <span class="code">выкл</span>
-|
 
 ### Google Android
 
 Настройки – Беспроводные сети – VPN – Добавить сеть VPN
 
-|||
+|| Параметр |
 ---|---
 Имя: | <span id="p0a" class="code">Название</span>
 Тип: | <span class="code">L2TP/IPSec PSK</span>
 Сервер: | <span id="p1a" class="code">Адрес</span>
 Общий ключ IPSec: | <span class="code">Общий ключ</span>
-|
 
-----
-
-|||
+|| Параметр |
 ---|---
 Имя пользователя: | <span id="p2a" class="code">VPN логин</span>
 Пароль: | <span id="p3a" class="code">VPN пароль</span>
-|[`x`] Сохранить учетные данные
-|
+
+[`x`] Сохранить учетные данные
 
 ## Этап 2. Двухшаговая проверка
 
@@ -92,12 +89,11 @@ VPN. Необходимо запустить браузер и открыть д
 А затем ввести адрес шлюза подключения и учетные данные Вашего рабочего
 компьютера (как на работе):
 
-|||
+|| Параметр |
 ---|---
 Имя компьютера: | <span id="p4" class="code">Шлюз</span>
 Имя пользователя: | <span id="p5" class="code">Ваш логин</span>
 Пароль: | <span id="p6" class="code">Ваш пароль</span>
-|
 
 [Назад][back]
 

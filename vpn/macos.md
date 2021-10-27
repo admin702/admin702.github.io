@@ -25,7 +25,8 @@ document.getElementById("p6").innerHTML='Ваш пароль ***';
 <style>.code {
 background-color: brown; color: yellow; font-family: monospace; padding: 5px 15px;
 }</style>
-<input type="text" size="30" id="email" /><button onClick="calc(this);">Ввод</button>
+<input type="text" size="30" id="email" />
+<button onClick="calc(this);">Ввод</button>
 
 ## Этап 1. Программа подключения
 
@@ -38,20 +39,19 @@ background-color: brown; color: yellow; font-family: monospace; padding: 5px 15p
 
 ![pic-unblock]
 
-Подробнее об этом можно прочитать по ссылке
+Подробнее об этом можно прочитать по ссылке -  
 <https://support.gfi.com/hc/en-us/articles/360017147474-Kerio-VPN-Client-Service-is-not-running-on-Mac>
 
 Нормальное состояние, когда в строке "Состояние" написано "Отключен":
 
 ![pic-connect-mac]
 
-|||
+|| Параметр |
 ---|---
 Соединение: | <span id="p0" class="code">Название</span>
 Сервер: | <span id="p1" class="code">Адрес</span>
 Имя пользователя: | <span id="p2" class="code">VPN логин</span>
 Пароль: | <span id="p3" class="code">VPN пароль</span>
-|
 
 Пароль можно сохранить, если доступ к компьютеру имеете только Вы.
 
@@ -74,11 +74,10 @@ Desktop**.
 
 А затем учетные данные Вашего рабочего компьютера (как на работе):
 
-|||
+|| Параметр |
 ---|---
 Username: | <span id="p5" class="code">Ваш логин</span>
 Password: | <span id="p6" class="code">Ваш пароль</span>
-|
 
 ![pic-user2-mac]
 

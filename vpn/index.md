@@ -26,7 +26,8 @@ document.getElementById("p6").innerHTML='Ваш пароль ***';
 <style>.code {
 background-color: brown; color: yellow; font-family: monospace; padding: 5px 15px;
 }</style>
-<input type="text" size="30" id="email" /><button onClick="calc(this);">Ввод</button>
+<input type="text" size="30" id="email" />
+<button onClick="calc(this);">Ввод</button>
 
 Также Вам надо узнать в ИТ-отделе назначенный Вам **VPN пароль**.  
 А **Ваш пароль** от рабочего компьютера должны знать Вы сами.
@@ -50,13 +51,12 @@ background-color: brown; color: yellow; font-family: monospace; padding: 5px 15p
 
 Установите, запустите и введите из Ваших учетных данных:
 
-|||
+|| Параметр |
 ---|---
 Соединение: | <span id="p0" class="code">Название</span>
 Сервер: | <span id="p1" class="code">Адрес</span>
 Имя пользователя: | <span id="p2" class="code">VPN логин</span>
 Пароль: | <span id="p3" class="code">VPN пароль</span>
-|
 
 Пароль можно сохранить, если доступ к компьютеру имеете только Вы.
 
@@ -113,11 +113,10 @@ background-color: brown; color: yellow; font-family: monospace; padding: 5px 15p
 Если все успешно, то Вы получите от Вашего рабочего компьютера приглашение
 ввести (как на работе):
 
-|||
+|| Параметр |
 ---|---
 Имя пользователя: | <span id="p5" class="code">Ваш логин</span>
 Пароль: | <span id="p6" class="code">Ваш пароль</span>
-|
 
 Здесь пароль лучше никогда не сохранять, так как это уже Ваше рабочее место
 с Вашими рабочими документами. Все, что вдруг пропадет по каким-то причинам,
