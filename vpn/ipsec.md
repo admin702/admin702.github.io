@@ -7,20 +7,26 @@
 
 Укажите здесь адрес Вашей рабочей электронной почты, чтобы в тексте далее
 подставились  
-<span id="pt" class="code">параметры</span>:
+<span id="pt">параметры</span>:
 
 <script>function calc(btn){
-var e=document.getElementById('email').value;
+var e=document.getElementById('email').value.trim();
 if(/^.+@.+\..+/.test(e)){
 var x=/(.+)@(..(.+)\..+)/;
 document.getElementById('pt').innerHTML='Ваши параметры';
-document.getElementById('p0i').innerHTML=e.replace(x,'$3');
-document.getElementById('p0a').innerHTML=e.replace(x,'$3');
-document.getElementById('p1i').innerHTML=e.replace(x,'mail.$2');
-document.getElementById('p1a').innerHTML=e.replace(x,'mail.$2');
-document.getElementById('p2').innerHTML=e.replace(x,'$1');
-document.getElementById('p3').innerHTML='VPN пароль ***';
-document.getElementById('p4w').innerHTML=e.replace(x,
+p0=e.replace(x,'$3');
+document.getElementById('i0').innerHTML=p0;
+document.getElementById('a0').innerHTML=p0;
+p1=e.replace(x,'mail.$2');
+document.getElementById('i1').innerHTML=p1;
+document.getElementById('a1').innerHTML=p1;
+p2=e.replace(x,'$1');
+document.getElementById('i2').innerHTML=p2;
+document.getElementById('a2').innerHTML=p2;
+p3='VPN пароль ***';
+document.getElementById('i3').innerHTML=p3;
+document.getElementById('a3').innerHTML=p3;
+document.getElementById('l4').innerHTML=e.replace(x,
 '<a target="_blank" href="https://kerio.$2:4081//nonauth/totpVerify.cs">'+
 'https://kerio.$2:4081//nonauth/totpVerify.cs</a>');
 document.getElementById('p4').innerHTML=e.replace(x,'kerio.$2');
@@ -28,8 +34,8 @@ document.getElementById('p5').innerHTML=e.replace(x,'$3\\$1');
 document.getElementById('p6').innerHTML='Ваш пароль ***';
 btn.innerHTML='Готово!';
 }else{alert('Укажите email');}}</script>
-<style>.code {
-background-color: brown; color: yellow; font-family: monospace; padding: 5px 15px;
+<style>span{
+background-color:brown;color:yellow;font-family:monospace;padding:5px 15px;
 }</style>
 <input type="text" size="30" id="email" />
 <button onClick="calc(this);">Ввод</button>
@@ -45,14 +51,14 @@ background-color: brown; color: yellow; font-family: monospace; padding: 5px 15p
 
 || Параметр |
 ---|---
-Тип: | <span class="code">L2TP</span>
-Описание: | <span id="p0i" class="code">Название</span>
-Сервер: | <span id="p1i" class="code">Адрес</span>
-Учетная запись: | <span id="p2i" class="code">VPN логин</span>
-RSA SecurID: | <span class="code">выкл</span>
-Пароль: | <span id="p3i" class="code">VPN пароль</span>
-Общий ключ: | <span class="code">Общий ключ</span>
-Для всех данных: | <span class="code">выкл</span>
+Тип: | <span>L2TP</span>
+Описание: | <span id="i0">Название</span>
+Сервер: | <span id="i1">Адрес</span>
+Учетная запись: | <span id="i2">VPN логин</span>
+RSA SecurID: | <span>выкл</span>
+Пароль: | <span id="i3">VPN пароль</span>
+Общий ключ: | <span>Общий ключ</span>
+Для всех данных: | <span>выкл</span>
 
 ### Google Android
 
@@ -60,17 +66,17 @@ RSA SecurID: | <span class="code">выкл</span>
 
 || Параметр |
 ---|---
-Имя: | <span id="p0a" class="code">Название</span>
-Тип: | <span class="code">L2TP/IPSec PSK</span>
-Сервер: | <span id="p1a" class="code">Адрес</span>
-Общий ключ IPSec: | <span class="code">Общий ключ</span>
+Имя: | <span id="a0">Название</span>
+Тип: | <span>L2TP/IPSec PSK</span>
+Сервер: | <span id="a1">Адрес</span>
+Общий ключ IPSec: | <span>Общий ключ</span>
 
 || Параметр |
 ---|---
-Имя пользователя: | <span id="p2a" class="code">VPN логин</span>
-Пароль: | <span id="p3a" class="code">VPN пароль</span>
+Имя пользователя: | <span id="a2">VPN логин</span>
+Пароль: | <span id="a3">VPN пароль</span>
 
-<span class="code">x</span> Сохранить учетные данные
+<span>x</span> Сохранить учетные данные
 
 ## Этап 2. Двухшаговая проверка
 
@@ -78,7 +84,7 @@ RSA SecurID: | <span class="code">выкл</span>
 настройки двухшаговой проверки не открывается автоматически после подключения
 VPN. Необходимо запустить браузер и открыть данную страницу вручную:
 
-<span id="p4w" class="code">https://Шлюз:4081//nonauth/totpVerify.cs</span>
+<span id="l4">https://Шлюз:4081//nonauth/totpVerify.cs</span>
 
 Далее настроить двухшаговую проверку по [инструкции][2fa] и сохранить
 на 30 дней.
@@ -94,9 +100,9 @@ VPN. Необходимо запустить браузер и открыть д
 
 || Параметр |
 ---|---
-Имя компьютера: | <span id="p4" class="code">Шлюз</span>
-Имя пользователя: | <span id="p5" class="code">Ваш логин</span>
-Пароль: | <span id="p6" class="code">Ваш пароль</span>
+Имя компьютера: | <span id="p4">Шлюз</span>
+Имя пользователя: | <span id="p5">Ваш логин</span>
+Пароль: | <span id="p6">Ваш пароль</span>
 
 ---
 
