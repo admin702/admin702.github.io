@@ -6,11 +6,13 @@
 Редакция: {{ 'now' | date: "%Y-%m-%d" }}
 
 Укажите здесь адрес Вашей рабочей электронной почты, чтобы в тексте далее
-подставились <span class="code">Ваши параметры</span>:
+подставились  
+<span id="pt" class="code">параметры</span>:
 
 <script>function calc(){
 var x=/(.+)@(..(.+)\..+)/;
 var e=document.getElementById("email").value;
+document.getElementById("pt").innerHTML='Ваши параметры';
 document.getElementById("p0").innerHTML=e.replace(x,'$3');
 document.getElementById("p1").innerHTML=e.replace(x,'mail.$2');
 document.getElementById("p2").innerHTML=e.replace(x,'$1');
@@ -43,9 +45,9 @@ background-color: brown; color: yellow; font-family: monospace; padding: 5px 15p
 ![pic-connect-mac]
 
 * Соединение:  
-<span id="p0" class="code">Соединение</span>
+<span id="p0" class="code">Название</span>
 * Сервер:  
-<span id="p1" class="code">Соединение</span>
+<span id="p1" class="code">Адрес</span>
 * Имя пользователя:  
 <span id="p2" class="code">VPN логин</span>
 * Пароль:  
@@ -65,7 +67,7 @@ VPN в строке меню".
 Windows. Рекомендуется установить бесплатную программу **Microsoft Remote
 Desktop**.
 
-Ввести в поле "PC name" <span id="p4" class="code">kerio...</span>
+Ввести в поле "PC name" <span id="p4" class="code">Шлюз</span>
 
 ![pic-rdp-mac]
 

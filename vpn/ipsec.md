@@ -6,11 +6,13 @@
 Редакция: {{ 'now' | date: "%Y-%m-%d" }}
 
 Укажите здесь адрес Вашей рабочей электронной почты, чтобы в тексте далее
-подставились <span class="code">Ваши параметры</span>:
+подставились  
+<span id="pt" class="code">параметры</span>:
 
 <script>function calc(){
 var x=/(.+)@(..(.+)\..+)/;
 var e=document.getElementById("email").value;
+document.getElementById("pt").innerHTML='Ваши параметры';
 document.getElementById("p0i").innerHTML=e.replace(x,'$3');
 document.getElementById("p0a").innerHTML=e.replace(x,'$3');
 document.getElementById("p1i").innerHTML=e.replace(x,'mail.$2');
@@ -39,9 +41,9 @@ background-color: brown; color: yellow; font-family: monospace; padding: 5px 15p
 * Тип:  
 <span class="code">L2TP</span>
 * Описание:  
-<span id="p0i" class="code">Соединение</span>
+<span id="p0i" class="code">Название</span>
 * Сервер:  
-<span id="p1i" class="code">Соединение</span>
+<span id="p1i" class="code">Адрес</span>
 * Учетная запись:  
 <span id="p2i" class="code">VPN логин</span>
 * RSA SecurID:  
@@ -58,11 +60,11 @@ background-color: brown; color: yellow; font-family: monospace; padding: 5px 15p
 Настройки – Беспроводные сети – VPN – Добавить сеть VPN
 
 * Имя:  
-<span id="p0a" class="code">Соединение</span>
+<span id="p0a" class="code">Название</span>
 * Тип:  
 <span class="code">L2TP/IPSec PSK</span>
 * Сервер:  
-<span id="p1a" class="code">Соединение</span>
+<span id="p1a" class="code">Адрес</span>
 * Общий ключ IPSec:  
 <span class="code">Общий ключ</span>
 
@@ -80,7 +82,7 @@ background-color: brown; color: yellow; font-family: monospace; padding: 5px 15p
 настройки двухшаговой проверки не открывается автоматически после подключения
 VPN. Необходимо запустить браузер и открыть данную страницу вручную:
 
-<span id="p4w" class="code">https://kerio...:4081//nonauth/totpVerify.cs</span>
+<span id="p4w" class="code">https://Шлюз:4081//nonauth/totpVerify.cs</span>
 
 Далее настроить двухшаговую проверку по [инструкции][2fa] и сохранить
 на 30 дней.
@@ -91,11 +93,11 @@ VPN. Необходимо запустить браузер и открыть д
 
 [Читать о нем для разных платформ на сайте Microsoft.][RD clients]
 
-А затем ввести адрес и учетные данные Вашего рабочего компьютера
-(как на работе):
+А затем ввести адрес шлюза подключения и учетные данные Вашего рабочего
+компьютера (как на работе):
 
 * Имя компьютера:  
-<span id="p4" class="code">kerio...</span>
+<span id="p4" class="code">Шлюз</span>
 * Имя пользователя:  
 <span id="p5" class="code">Ваш логин</span>
 * Пароль:  

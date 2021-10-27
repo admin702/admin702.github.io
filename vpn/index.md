@@ -7,11 +7,13 @@ permalink: /vpn/
 Редакция: {{ 'now' | date: "%Y-%m-%d" }}
 
 Укажите здесь адрес Вашей рабочей электронной почты, чтобы в тексте далее
-подставились <span class="code">Ваши параметры</span>:
+подставились  
+<span id="pt" class="code">параметры</span>:
 
 <script>function calc(){
 var x=/(.+)@(..(.+)\..+)/;
 var e=document.getElementById("email").value;
+document.getElementById("pt").innerHTML='Ваши параметры';
 document.getElementById("p0").innerHTML=e.replace(x,'$3');
 document.getElementById("p1").innerHTML=e.replace(x,'mail.$2');
 document.getElementById("p2").innerHTML=e.replace(x,'$1');
@@ -48,9 +50,9 @@ background-color: brown; color: yellow; font-family: monospace; padding: 5px 15p
 Установите, запустите и введите из Ваших учетных данных:
 
 * Соединение:  
-<span id="p0" class="code">Соединение</span>
+<span id="p0" class="code">Название</span>
 * Сервер:  
-<span id="p1" class="code">Соединение</span>
+<span id="p1" class="code">Адрес</span>
 * Имя пользователя:  
 <span id="p2" class="code">VPN логин</span>
 * Пароль:  
@@ -86,7 +88,7 @@ background-color: brown; color: yellow; font-family: monospace; padding: 5px 15p
 
 Нажмите клавиши **Win+R** ([где это?][WinR]) и введите в поле Выполнить:
 
-<span id="p4" class="code">mstsc /v:kerio...</span>
+<span id="p4" class="code">mstsc /v:Шлюз...</span>
 
 **Обратите внимание, что в этой строке есть пробел перед косой чертой и она
 именно с таким наклоном**
