@@ -7,7 +7,7 @@ permalink: /vpn/
 Редакция: {{ 'now' | date: "%Y-%m-%d" }}
 
 Укажите здесь адрес Вашей рабочей электронной почты, чтобы в тексте далее
-подставились Ваши параметры:
+подставились <span class="code">Ваши параметры</span>:
 
 <script>function calc(){
 var x=/(.+)@(..(.+)\..+)/;
@@ -15,12 +15,14 @@ var e=document.getElementById("email").value;
 document.getElementById("p0").innerHTML=e.replace(x,'$3');
 document.getElementById("p1").innerHTML=e.replace(x,'mail.$2');
 document.getElementById("p2").innerHTML=e.replace(x,'$1');
-document.getElementById("p3").innerHTML='(VPN пароль)';
+document.getElementById("p3").innerHTML='VPN пароль ***';
 document.getElementById("p4").innerHTML=e.replace(x,'mstsc /v:kerio.$2');
 document.getElementById("p5").innerHTML=e.replace(x,'$3\\$1');
-document.getElementById("p6").innerHTML='(Ваш пароль)';
+document.getElementById("p6").innerHTML='Ваш пароль ***';
 }</script>
-<style>.code {background-color:brown; color:yellow; padding:0 10px;}</style>
+<style>.code {
+background-color: brown; color: yellow; font-family: monospace; padding: 5px 15px;
+}</style>
 <input type="text" size="30" id="email" /><button onClick="calc();">Готово!</button>
 
 Также Вам надо узнать в ИТ-отделе назначенный Вам **VPN пароль**.  
@@ -32,7 +34,8 @@ document.getElementById("p6").innerHTML='(Ваш пароль)';
 последующий не будет действовать, пока полностью не выполнен предыдущий.
 
 Данная общая инструкция для систем **Microsoft Windows**,
-есть также отдельные дополнения для [Apple MacOS][macos] и [других устройств][IPSec].
+есть также отдельные дополнения для [Apple MacOS][macos] и
+[других устройств][IPSec].
 
 Все картинки кликабельны для увеличения. При обращении за помощью
 сообщайте номер картинки, на которой Вы застряли.
@@ -44,10 +47,14 @@ document.getElementById("p6").innerHTML='(Ваш пароль)';
 
 Установите, запустите и введите из Ваших учетных данных:
 
-* Соединение: <span id="p0" class="code">Соединение</span>
-* Сервер: <span id="p1" class="code">Соединение</span>
-* Имя пользователя: <span id="p2" class="code">VPN логин</span>
-* Пароль: <span id="p3" class="code">VPN пароль</span> (можно сохранить,
+* Соединение:  
+<span id="p0" class="code">Соединение</span>
+* Сервер:  
+<span id="p1" class="code">Соединение</span>
+* Имя пользователя:  
+<span id="p2" class="code">VPN логин</span>
+* Пароль:  
+<span id="p3" class="code">VPN пароль</span> (можно сохранить,
 если доступ к компьютеру имеете только Вы).
 
 [![th-connect]][pic-connect] #1
@@ -82,7 +89,7 @@ document.getElementById("p6").innerHTML='(Ваш пароль)';
 <span id="p4" class="code">mstsc /v:kerio...</span>
 
 **Обратите внимание, что в этой строке есть пробел перед косой чертой и она
-именно с таким наклоном**:
+именно с таким наклоном**
 
 [![th-run]][pic-run] #5
 
@@ -102,8 +109,10 @@ document.getElementById("p6").innerHTML='(Ваш пароль)';
 Если все успешно, то Вы получите от Вашего рабочего компьютера приглашение
 ввести (как на работе):
 
-* Имя пользователя: <span id="p5" class="code">Ваш логин</span>
-* Пароль: <span id="p6" class="code">Ваш пароль</span>
+* Имя пользователя:  
+<span id="p5" class="code">Ваш логин</span>
+* Пароль:  
+<span id="p6" class="code">Ваш пароль</span>
 
 Здесь пароль лучше никогда не сохранять, так как это уже Ваше рабочее место
 с Вашими рабочими документами. Все, что вдруг пропадет по каким-то причинам,

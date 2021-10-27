@@ -6,7 +6,7 @@
 Редакция: {{ 'now' | date: "%Y-%m-%d" }}
 
 Укажите здесь адрес Вашей рабочей электронной почты, чтобы в тексте далее
-подставились Ваши параметры:
+подставились <span class="code">Ваши параметры</span>:
 
 <script>function calc(){
 var x=/(.+)@(..(.+)\..+)/;
@@ -14,12 +14,14 @@ var e=document.getElementById("email").value;
 document.getElementById("p0").innerHTML=e.replace(x,'$3');
 document.getElementById("p1").innerHTML=e.replace(x,'mail.$2');
 document.getElementById("p2").innerHTML=e.replace(x,'$1');
-document.getElementById("p3").innerHTML='(VPN пароль)';
+document.getElementById("p3").innerHTML='VPN пароль ***';
 document.getElementById("p4").innerHTML=e.replace(x,'kerio.$2');
 document.getElementById("p5").innerHTML=e.replace(x,'$3\\$1');
-document.getElementById("p6").innerHTML='(Ваш пароль)';
+document.getElementById("p6").innerHTML='Ваш пароль ***';
 }</script>
-<style>.code {background-color:brown; color:yellow; padding:0 10px;}</style>
+<style>.code {
+background-color: brown; color: yellow; font-family: monospace; padding: 5px 15px;
+}</style>
 <input type="text" size="30" id="email" /><button onClick="calc();">Готово!</button>
 
 ## Этап 1. Программа подключения
@@ -40,10 +42,14 @@ document.getElementById("p6").innerHTML='(Ваш пароль)';
 
 ![pic-connect-mac]
 
-* Соединение: <span id="p0" class="code">Соединение</span>
-* Сервер: <span id="p1" class="code">Соединение</span>
-* Имя пользователя: <span id="p2" class="code">VPN логин</span>
-* Пароль: <span id="p3" class="code">VPN пароль</span> (можно сохранить,
+* Соединение:  
+<span id="p0" class="code">Соединение</span>
+* Сервер:  
+<span id="p1" class="code">Соединение</span>
+* Имя пользователя:  
+<span id="p2" class="code">VPN логин</span>
+* Пароль:  
+<span id="p3" class="code">VPN пароль</span> (можно сохранить,
 если доступ к компьютеру имеете только Вы).
 
 Рекомендуется поставить для удобства подключения галочку "Показать состояние
@@ -65,8 +71,10 @@ Desktop**.
 
 А затем учетные данные Вашего рабочего компьютера (как на работе):
 
-* Username: <span id="p5" class="code">Ваш логин</span>
-* Password: <span id="p6" class="code">Ваш пароль</span>
+* Username:  
+<span id="p5" class="code">Ваш логин</span>
+* Password:  
+<span id="p6" class="code">Ваш пароль</span>
 
 ![pic-user2-mac]
 

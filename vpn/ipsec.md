@@ -6,7 +6,7 @@
 Редакция: {{ 'now' | date: "%Y-%m-%d" }}
 
 Укажите здесь адрес Вашей рабочей электронной почты, чтобы в тексте далее
-подставились Ваши параметры:
+подставились <span class="code">Ваши параметры</span>:
 
 <script>function calc(){
 var x=/(.+)@(..(.+)\..+)/;
@@ -16,13 +16,15 @@ document.getElementById("p0a").innerHTML=e.replace(x,'$3');
 document.getElementById("p1i").innerHTML=e.replace(x,'mail.$2');
 document.getElementById("p1a").innerHTML=e.replace(x,'mail.$2');
 document.getElementById("p2").innerHTML=e.replace(x,'$1');
-document.getElementById("p3").innerHTML='(VPN пароль)';
+document.getElementById("p3").innerHTML='VPN пароль ***';
 document.getElementById("p4w").innerHTML=e.replace(x,'https://kerio.$2:4081//nonauth/totpVerify.cs');
 document.getElementById("p4").innerHTML=e.replace(x,'kerio.$2');
 document.getElementById("p5").innerHTML=e.replace(x,'$3\\$1');
-document.getElementById("p6").innerHTML='(Ваш пароль)';
+document.getElementById("p6").innerHTML='Ваш пароль ***';
 }</script>
-<style>.code {background-color:brown; color:yellow; padding:0 10px;}</style>
+<style>.code {
+background-color: brown; color: yellow; font-family: monospace; padding: 5px 15px;
+}</style>
 <input type="text" size="30" id="email" /><button onClick="calc();">Готово!</button>
 
 Также Вам надо узнать в ИТ-отделе назначенный Вам **VPN пароль** и **Общий ключ**.  
@@ -34,28 +36,42 @@ document.getElementById("p6").innerHTML='(Ваш пароль)';
 
 Настройки – VPN – Добавить конфигурацию VPN...
 
-* Тип: <span class="code">L2TP</span>
-* Описание: <span id="p0i" class="code">Соединение</span>
-* Сервер: <span id="p1i" class="code">Соединение</span>
-* Учетная запись: <span id="p2i" class="code">VPN логин</span>
-* RSA SecurID: <span class="code">выкл</span>
-* Пароль: <span id="p3i" class="code">VPN пароль</span>
-* Общий ключ: <span class="code">Общий ключ</span>
-* Для всех данных: <span class="code">выкл</span>
+* Тип:  
+<span class="code">L2TP</span>
+* Описание:  
+<span id="p0i" class="code">Соединение</span>
+* Сервер:  
+<span id="p1i" class="code">Соединение</span>
+* Учетная запись:  
+<span id="p2i" class="code">VPN логин</span>
+* RSA SecurID:  
+<span class="code">выкл</span>
+* Пароль:  
+<span id="p3i" class="code">VPN пароль</span>
+* Общий ключ:  
+<span class="code">Общий ключ</span>
+* Для всех данных:  
+<span class="code">выкл</span>
 
 ### Google Android
 
 Настройки – Беспроводные сети – VPN – Добавить сеть VPN
 
-* Имя: <span id="p0a" class="code">Соединение</span>
-* Тип: <span class="code">L2TP/IPSec PSK</span>
-* Сервер: <span id="p1a" class="code">Соединение</span>
-* Общий ключ IPSec: <span class="code">Общий ключ</span>
+* Имя:  
+<span id="p0a" class="code">Соединение</span>
+* Тип:  
+<span class="code">L2TP/IPSec PSK</span>
+* Сервер:  
+<span id="p1a" class="code">Соединение</span>
+* Общий ключ IPSec:  
+<span class="code">Общий ключ</span>
 
 ----
 
-* Имя пользователя: <span id="p2a" class="code">VPN логин</span>
-* Пароль: <span id="p3a" class="code">VPN пароль</span>
+* Имя пользователя:  
+<span id="p2a" class="code">VPN логин</span>
+* Пароль:  
+<span id="p3a" class="code">VPN пароль</span>
 * [`x`] Сохранить учетные данные
 
 ## Этап 2. Двухшаговая проверка
@@ -78,9 +94,12 @@ VPN. Необходимо запустить браузер и открыть д
 А затем ввести адрес и учетные данные Вашего рабочего компьютера
 (как на работе):
 
-* Имя компьютера: <span id="p4" class="code">kerio...</span>
-* Имя пользователя: <span id="p5" class="code">Ваш логин</span>
-* Пароль: <span id="p6" class="code">Ваш пароль</span>
+* Имя компьютера:  
+<span id="p4" class="code">kerio...</span>
+* Имя пользователя:  
+<span id="p5" class="code">Ваш логин</span>
+* Пароль:  
+<span id="p6" class="code">Ваш пароль</span>
 
 [Назад][back]
 
