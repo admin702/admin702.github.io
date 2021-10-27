@@ -11,18 +11,19 @@ permalink: /vpn/
 <span id="pt" class="code">параметры</span>:
 
 <script>function calc(btn){
-btn.innerHTML='Готово!';
+var e=document.getElementById('email').value;
+if(/^.+@.+\..+/.test(e)){
 var x=/(.+)@(..(.+)\..+)/;
-var e=document.getElementById("email").value;
-document.getElementById("pt").innerHTML='Ваши параметры';
-document.getElementById("p0").innerHTML=e.replace(x,'$3');
-document.getElementById("p1").innerHTML=e.replace(x,'mail.$2');
-document.getElementById("p2").innerHTML=e.replace(x,'$1');
-document.getElementById("p3").innerHTML='VPN пароль ***';
-document.getElementById("p4").innerHTML=e.replace(x,'mstsc /v:kerio.$2');
-document.getElementById("p5").innerHTML=e.replace(x,'$3\\$1');
-document.getElementById("p6").innerHTML='Ваш пароль ***';
-}</script>
+document.getElementById('pt').innerHTML='Ваши параметры';
+document.getElementById('p0').innerHTML=e.replace(x,'$3');
+document.getElementById('p1').innerHTML=e.replace(x,'mail.$2');
+document.getElementById('p2').innerHTML=e.replace(x,'$1');
+document.getElementById('p3').innerHTML='VPN пароль ***';
+document.getElementById('p4').innerHTML=e.replace(x,'mstsc /v:kerio.$2');
+document.getElementById('p5').innerHTML=e.replace(x,'$3\\$1');
+document.getElementById('p6').innerHTML='Ваш пароль ***';
+btn.innerHTML='Готово!';
+}else{alert('Укажите email');}}</script>
 <style>.code {
 background-color: brown; color: yellow; font-family: monospace; padding: 5px 15px;
 }</style>

@@ -10,22 +10,23 @@
 <span id="pt" class="code">параметры</span>:
 
 <script>function calc(btn){
-btn.innerHTML='Готово!';
+var e=document.getElementById('email').value;
+if(/^.+@.+\..+/.test(e)){
 var x=/(.+)@(..(.+)\..+)/;
-var e=document.getElementById("email").value;
-document.getElementById("pt").innerHTML='Ваши параметры';
-document.getElementById("p0i").innerHTML=e.replace(x,'$3');
-document.getElementById("p0a").innerHTML=e.replace(x,'$3');
-document.getElementById("p1i").innerHTML=e.replace(x,'mail.$2');
-document.getElementById("p1a").innerHTML=e.replace(x,'mail.$2');
-document.getElementById("p2").innerHTML=e.replace(x,'$1');
-document.getElementById("p3").innerHTML='VPN пароль ***';
-document.getElementById("p4w").innerHTML=e.replace(x,'<a target="_blank"
+document.getElementById('pt').innerHTML='Ваши параметры';
+document.getElementById('p0i').innerHTML=e.replace(x,'$3');
+document.getElementById('p0a').innerHTML=e.replace(x,'$3');
+document.getElementById('p1i').innerHTML=e.replace(x,'mail.$2');
+document.getElementById('p1a').innerHTML=e.replace(x,'mail.$2');
+document.getElementById('p2').innerHTML=e.replace(x,'$1');
+document.getElementById('p3').innerHTML='VPN пароль ***';
+document.getElementById('p4w').innerHTML=e.replace(x,'<a target="_blank"
 href="https://kerio.$2:4081//nonauth/totpVerify.cs">https://kerio.$2:4081//nonauth/totpVerify.cs</a>');
-document.getElementById("p4").innerHTML=e.replace(x,'kerio.$2');
-document.getElementById("p5").innerHTML=e.replace(x,'$3\\$1');
-document.getElementById("p6").innerHTML='Ваш пароль ***';
-}</script>
+document.getElementById('p4').innerHTML=e.replace(x,'kerio.$2');
+document.getElementById('p5').innerHTML=e.replace(x,'$3\\$1');
+document.getElementById('p6').innerHTML='Ваш пароль ***';
+btn.innerHTML='Готово!';
+}else{alert('Укажите email');}}</script>
 <style>.code {
 background-color: brown; color: yellow; font-family: monospace; padding: 5px 15px;
 }</style>
@@ -68,7 +69,7 @@ RSA SecurID: | <span class="code">выкл</span>
 Имя пользователя: | <span id="p2a" class="code">VPN логин</span>
 Пароль: | <span id="p3a" class="code">VPN пароль</span>
 
-[<span class="code">x</span>] Сохранить учетные данные
+<span class="code">x</span> Сохранить учетные данные
 
 ## Этап 2. Двухшаговая проверка
 
