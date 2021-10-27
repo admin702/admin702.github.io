@@ -20,8 +20,9 @@ document.getElementById('p1i').innerHTML=e.replace(x,'mail.$2');
 document.getElementById('p1a').innerHTML=e.replace(x,'mail.$2');
 document.getElementById('p2').innerHTML=e.replace(x,'$1');
 document.getElementById('p3').innerHTML='VPN пароль ***';
-document.getElementById('p4w').innerHTML=e.replace(x,'<a target="_blank"
-href="https://kerio.$2:4081//nonauth/totpVerify.cs">https://kerio.$2:4081//nonauth/totpVerify.cs</a>');
+document.getElementById('p4w').innerHTML=e.replace(x,
+'<a target="_blank" href="https://kerio.$2:4081//nonauth/totpVerify.cs">'+
+'https://kerio.$2:4081//nonauth/totpVerify.cs</a>');
 document.getElementById('p4').innerHTML=e.replace(x,'kerio.$2');
 document.getElementById('p5').innerHTML=e.replace(x,'$3\\$1');
 document.getElementById('p6').innerHTML='Ваш пароль ***';
