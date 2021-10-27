@@ -45,15 +45,15 @@ background-color: brown; color: yellow; font-family: monospace; padding: 5px 15p
 
 ![pic-connect-mac]
 
-* Соединение:  
-<span id="p0" class="code">Название</span>
-* Сервер:  
-<span id="p1" class="code">Адрес</span>
-* Имя пользователя:  
-<span id="p2" class="code">VPN логин</span>
-* Пароль:  
-<span id="p3" class="code">VPN пароль</span> (можно сохранить,
-если доступ к компьютеру имеете только Вы).
+|||
+---|---
+Соединение: | <span id="p0" class="code">Название</span>
+Сервер: | <span id="p1" class="code">Адрес</span>
+Имя пользователя: | <span id="p2" class="code">VPN логин</span>
+Пароль: | <span id="p3" class="code">VPN пароль</span>
+|
+
+Пароль можно сохранить, если доступ к компьютеру имеете только Вы.
 
 Рекомендуется поставить для удобства подключения галочку "Показать состояние
 VPN в строке меню".
@@ -74,10 +74,11 @@ Desktop**.
 
 А затем учетные данные Вашего рабочего компьютера (как на работе):
 
-* Username:  
-<span id="p5" class="code">Ваш логин</span>
-* Password:  
-<span id="p6" class="code">Ваш пароль</span>
+|||
+---|---
+Username: | <span id="p5" class="code">Ваш логин</span>
+Password: | <span id="p6" class="code">Ваш пароль</span>
+|
 
 ![pic-user2-mac]
 

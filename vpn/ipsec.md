@@ -39,43 +39,38 @@ background-color: brown; color: yellow; font-family: monospace; padding: 5px 15p
 
 Настройки – VPN – Добавить конфигурацию VPN...
 
-* Тип:  
-<span class="code">L2TP</span>
-* Описание:  
-<span id="p0i" class="code">Название</span>
-* Сервер:  
-<span id="p1i" class="code">Адрес</span>
-* Учетная запись:  
-<span id="p2i" class="code">VPN логин</span>
-* RSA SecurID:  
-<span class="code">выкл</span>
-* Пароль:  
-<span id="p3i" class="code">VPN пароль</span>
-* Общий ключ:  
-<span class="code">Общий ключ</span>
-* Для всех данных:  
-<span class="code">выкл</span>
+|||
+---|---
+Тип: | <span class="code">L2TP</span>
+Описание: | <span id="p0i" class="code">Название</span>
+Сервер: | <span id="p1i" class="code">Адрес</span>
+Учетная запись: | <span id="p2i" class="code">VPN логин</span>
+RSA SecurID: | <span class="code">выкл</span>
+Пароль: | <span id="p3i" class="code">VPN пароль</span>
+Общий ключ: | <span class="code">Общий ключ</span>
+Для всех данных: | <span class="code">выкл</span>
+|
 
 ### Google Android
 
 Настройки – Беспроводные сети – VPN – Добавить сеть VPN
 
-* Имя:  
-<span id="p0a" class="code">Название</span>
-* Тип:  
-<span class="code">L2TP/IPSec PSK</span>
-* Сервер:  
-<span id="p1a" class="code">Адрес</span>
-* Общий ключ IPSec:  
-<span class="code">Общий ключ</span>
+|||
+---|---
+Имя: | <span id="p0a" class="code">Название</span>
+Тип: | <span class="code">L2TP/IPSec PSK</span>
+Сервер: | <span id="p1a" class="code">Адрес</span>
+Общий ключ IPSec: | <span class="code">Общий ключ</span>
+|
 
 ----
 
-* Имя пользователя:  
-<span id="p2a" class="code">VPN логин</span>
-* Пароль:  
-<span id="p3a" class="code">VPN пароль</span>
-* [`x`] Сохранить учетные данные
+|||
+---|---
+Имя пользователя: | <span id="p2a" class="code">VPN логин</span>
+Пароль: | <span id="p3a" class="code">VPN пароль</span>
+|[`x`] Сохранить учетные данные
+|
 
 ## Этап 2. Двухшаговая проверка
 
@@ -97,12 +92,12 @@ VPN. Необходимо запустить браузер и открыть д
 А затем ввести адрес шлюза подключения и учетные данные Вашего рабочего
 компьютера (как на работе):
 
-* Имя компьютера:  
-<span id="p4" class="code">Шлюз</span>
-* Имя пользователя:  
-<span id="p5" class="code">Ваш логин</span>
-* Пароль:  
-<span id="p6" class="code">Ваш пароль</span>
+|||
+---|---
+Имя компьютера: | <span id="p4" class="code">Шлюз</span>
+Имя пользователя: | <span id="p5" class="code">Ваш логин</span>
+Пароль: | <span id="p6" class="code">Ваш пароль</span>
+|
 
 [Назад][back]
 

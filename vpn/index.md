@@ -50,15 +50,15 @@ background-color: brown; color: yellow; font-family: monospace; padding: 5px 15p
 
 Установите, запустите и введите из Ваших учетных данных:
 
-* Соединение:  
-<span id="p0" class="code">Название</span>
-* Сервер:  
-<span id="p1" class="code">Адрес</span>
-* Имя пользователя:  
-<span id="p2" class="code">VPN логин</span>
-* Пароль:  
-<span id="p3" class="code">VPN пароль</span> (можно сохранить,
-если доступ к компьютеру имеете только Вы).
+|||
+---|---
+Соединение: | <span id="p0" class="code">Название</span>
+Сервер: | <span id="p1" class="code">Адрес</span>
+Имя пользователя: | <span id="p2" class="code">VPN логин</span>
+Пароль: | <span id="p3" class="code">VPN пароль</span>
+|
+
+Пароль можно сохранить, если доступ к компьютеру имеете только Вы.
 
 [![th-connect]][pic-connect] #1
 
@@ -67,7 +67,8 @@ background-color: brown; color: yellow; font-family: monospace; padding: 5px 15p
 Для защиты от кражи Ваших учетных данных требуются одноразовые **6-значные**
 коды подтверждения. Удобнее и безопаснее их получать с помощью смартфона.
 
-* На смартфоне требуется программа типа **Microsoft Authenticator** ([где взять?][appstore]).
+* На смартфоне требуется программа типа **Microsoft Authenticator**
+([где взять?][appstore]).
 * Без смартфона придется использовать [TOTP Calculator] вручную.
 
 Предварительно эту систему проверки надо [настроить][2fa]:
@@ -112,10 +113,11 @@ background-color: brown; color: yellow; font-family: monospace; padding: 5px 15p
 Если все успешно, то Вы получите от Вашего рабочего компьютера приглашение
 ввести (как на работе):
 
-* Имя пользователя:  
-<span id="p5" class="code">Ваш логин</span>
-* Пароль:  
-<span id="p6" class="code">Ваш пароль</span>
+|||
+---|---
+Имя пользователя: | <span id="p5" class="code">Ваш логин</span>
+Пароль: | <span id="p6" class="code">Ваш пароль</span>
+|
 
 Здесь пароль лучше никогда не сохранять, так как это уже Ваше рабочее место
 с Вашими рабочими документами. Все, что вдруг пропадет по каким-то причинам,
