@@ -5,13 +5,9 @@
 Здесь собраны отличия от общей [инструкции][back].  
 Редакция: {{ 'now' | date: "%Y-%m-%d" }}
 
-Укажите здесь адрес Вашей рабочей электронной почты, чтобы в тексте далее
-подставились  
-<span id="pt">параметры</span>:
-
 <script>function calc(btn){
 var e=document.getElementById('email').value.trim();
-if(/^.+@.+\..+/.test(e)){
+if(/^.+@...+\..+/.test(e)){
 var x=/(.+)@(..(.+)\..+)/;
 document.getElementById('pt').innerHTML='Ваши параметры';
 p0=e.replace(x,'$3');
@@ -26,22 +22,31 @@ document.getElementById('a2').innerHTML=p2;
 p3='VPN пароль ***';
 document.getElementById('i3').innerHTML=p3;
 document.getElementById('a3').innerHTML=p3;
-document.getElementById('l4').innerHTML=e.replace(x,
-'<a target="_blank" href="https://kerio.$2:4081//nonauth/totpVerify.cs">'+
-'https://kerio.$2:4081//nonauth/totpVerify.cs</a>');
-document.getElementById('p4').innerHTML=e.replace(x,'kerio.$2');
+pk='Общий ключ ***';
+document.getElementById('ik').innerHTML=pk;
+document.getElementById('ak').innerHTML=pk;
+p4=e.replace(x,'kerio.$2');
+l4='https://'+p4+':4081//nonauth/totpVerify.cs';
+document.getElementById('l4').innerHTML=
+'<a target="_blank" href="'+l4+'">'+l4+'</a>';
+document.getElementById('p4').innerHTML=p4;
 document.getElementById('p5').innerHTML=e.replace(x,'$3\\$1');
 document.getElementById('p6').innerHTML='Ваш пароль ***';
 btn.innerHTML='Готово!';
-}else{alert('Укажите email');}}</script>
-<style>span{
-background-color:brown;color:yellow;font-family:monospace;padding:5px 15px;
-}</style>
+}else{alert('Укажите email!');}}</script>
+
+<style>span{background-color:brown;color:yellow;font-family:monospace;padding:5px 15px;}
+span a{color:yellow}</style>
+
+Укажите здесь **адрес Вашей рабочей электронной почты** и кликните
+кнопку **Ввод**, чтобы в тексте далее подставились  
+<span id="pt">параметры</span>:
+
 <input type="text" size="30" id="email" />
 <button onClick="calc(this);">Ввод</button>
 
 Также Вам надо узнать в ИТ-отделе назначенный Вам **VPN пароль** и **Общий ключ**.  
-А **Ваш пароль** от рабочего компьютера должны знать Вы сами.
+А **Ваш пароль** от рабочего компьютера Вы должны знать сами.
 
 ## Этап 1. Настройки подключения
 
@@ -57,7 +62,7 @@ background-color:brown;color:yellow;font-family:monospace;padding:5px 15px;
 Учетная запись: | <span id="i2">VPN логин</span>
 RSA SecurID: | <span>выкл</span>
 Пароль: | <span id="i3">VPN пароль</span>
-Общий ключ: | <span>Общий ключ</span>
+Общий ключ: | <span id="ik">Общий ключ</span>
 Для всех данных: | <span>выкл</span>
 
 ### Google Android
@@ -69,7 +74,7 @@ RSA SecurID: | <span>выкл</span>
 Имя: | <span id="a0">Название</span>
 Тип: | <span>L2TP/IPSec PSK</span>
 Сервер: | <span id="a1">Адрес</span>
-Общий ключ IPSec: | <span>Общий ключ</span>
+Общий ключ IPSec: | <span id="ak">Общий ключ</span>
 
 || Параметр |
 ---|---
@@ -82,7 +87,8 @@ RSA SecurID: | <span>выкл</span>
 
 Нет отличий от общей [инструкции][back] за исключением того, что страница
 настройки двухшаговой проверки не открывается автоматически после подключения
-VPN. Необходимо запустить браузер и открыть данную страницу вручную:
+VPN. Необходимо запустить браузер и открыть данную страницу вручную
+(можно здесь кликнуть, если эта инструкция на том же устройстве):
 
 <span id="l4">https://Шлюз:4081//nonauth/totpVerify.cs</span>
 
@@ -91,8 +97,7 @@ VPN. Необходимо запустить браузер и открыть д
 
 ## Этап 3. Удаленный рабочий стол
 
-Установить **Microsoft Remote Desktop**.
-
+Установить **Microsoft Remote Desktop** -  
 [Читать о нем для разных платформ на сайте Microsoft.][RD clients]
 
 А затем ввести адрес шлюза подключения и учетные данные Вашего рабочего

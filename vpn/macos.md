@@ -5,13 +5,9 @@
 Здесь собраны отличия для системы Apple MacOS от общей [инструкции][back].  
 Редакция: {{ 'now' | date: "%Y-%m-%d" }}
 
-Укажите здесь адрес Вашей рабочей электронной почты, чтобы в тексте далее
-подставились  
-<span id="pt" class="code">параметры</span>:
-
 <script>function calc(btn){
 var e=document.getElementById('email').value;
-if(/^.+@.+\..+/.test(e)){
+if(/^.+@...+\..+/.test(e)){
 var x=/(.+)@(..(.+)\..+)/;
 document.getElementById('pt').innerHTML='Ваши параметры';
 document.getElementById('p0').innerHTML=e.replace(x,'$3');
@@ -22,12 +18,20 @@ document.getElementById('p4').innerHTML=e.replace(x,'kerio.$2');
 document.getElementById('p5').innerHTML=e.replace(x,'$3\\$1');
 document.getElementById('p6').innerHTML='Ваш пароль ***';
 btn.innerHTML='Готово!';
-}else{alert('Укажите email');}}</script>
-<style>.code {
-background-color: brown; color: yellow; font-family: monospace; padding: 5px 15px;
-}</style>
+}else{alert('Укажите email!');}}</script>
+
+<style>span{background-color:brown;color:yellow;font-family:monospace;padding:5px 15px;}
+span a{color:yellow}</style>
+
+Укажите здесь **адрес Вашей рабочей электронной почты** и кликните
+кнопку **Ввод**, чтобы в тексте далее подставились  
+<span id="pt">параметры</span>:
+
 <input type="text" size="30" id="email" />
 <button onClick="calc(this);">Ввод</button>
+
+Также Вам надо узнать в ИТ-отделе назначенный Вам **VPN пароль**.  
+А **Ваш пароль** от рабочего компьютера Вы должны знать сами.
 
 ## Этап 1. Программа подключения
 
@@ -49,10 +53,10 @@ background-color: brown; color: yellow; font-family: monospace; padding: 5px 15p
 
 || Параметр |
 ---|---
-Соединение: | <span id="p0" class="code">Название</span>
-Сервер: | <span id="p1" class="code">Адрес</span>
-Имя пользователя: | <span id="p2" class="code">VPN логин</span>
-Пароль: | <span id="p3" class="code">VPN пароль</span>
+Соединение: | <span id="p0">Название</span>
+Сервер: | <span id="p1">Адрес</span>
+Имя пользователя: | <span id="p2">VPN логин</span>
+Пароль: | <span id="p3">VPN пароль</span>
 
 Пароль можно сохранить, если доступ к компьютеру имеете только Вы.
 
@@ -69,7 +73,7 @@ VPN в строке меню".
 Windows. Рекомендуется установить бесплатную программу **Microsoft Remote
 Desktop**.
 
-Ввести в поле "PC name" <span id="p4" class="code">Шлюз</span>
+Ввести в поле "PC name": <span id="p4">Шлюз</span>
 
 ![pic-rdp-mac]
 
@@ -77,8 +81,8 @@ Desktop**.
 
 || Параметр |
 ---|---
-Username: | <span id="p5" class="code">Ваш логин</span>
-Password: | <span id="p6" class="code">Ваш пароль</span>
+Username: | <span id="p5">Ваш логин</span>
+Password: | <span id="p6">Ваш пароль</span>
 
 ![pic-user2-mac]
 

@@ -6,13 +6,9 @@ permalink: /vpn/
 Инструкция по подключению к удаленному рабочему столу.  
 Редакция: {{ 'now' | date: "%Y-%m-%d" }}
 
-Укажите здесь адрес Вашей рабочей электронной почты, чтобы в тексте далее
-подставились  
-<span id="pt" class="code">параметры</span>:
-
 <script>function calc(btn){
 var e=document.getElementById('email').value;
-if(/^.+@.+\..+/.test(e)){
+if(/^.+@...+\..+/.test(e)){
 var x=/(.+)@(..(.+)\..+)/;
 document.getElementById('pt').innerHTML='Ваши параметры';
 document.getElementById('p0').innerHTML=e.replace(x,'$3');
@@ -23,15 +19,20 @@ document.getElementById('p4').innerHTML=e.replace(x,'mstsc /v:kerio.$2');
 document.getElementById('p5').innerHTML=e.replace(x,'$3\\$1');
 document.getElementById('p6').innerHTML='Ваш пароль ***';
 btn.innerHTML='Готово!';
-}else{alert('Укажите email');}}</script>
-<style>.code {
-background-color: brown; color: yellow; font-family: monospace; padding: 5px 15px;
-}</style>
+}else{alert('Укажите email!');}}</script>
+
+<style>span{background-color:brown;color:yellow;font-family:monospace;padding:5px 15px;}
+span a{color:yellow}</style>
+
+Укажите здесь **адрес Вашей рабочей электронной почты** и кликните
+кнопку **Ввод**, чтобы в тексте далее подставились  
+<span id="pt">параметры</span>:
+
 <input type="text" size="30" id="email" />
 <button onClick="calc(this);">Ввод</button>
 
 Также Вам надо узнать в ИТ-отделе назначенный Вам **VPN пароль**.  
-А **Ваш пароль** от рабочего компьютера должны знать Вы сами.
+А **Ваш пароль** от рабочего компьютера Вы должны знать сами.
 
 ## Процедура
 
@@ -54,10 +55,10 @@ background-color: brown; color: yellow; font-family: monospace; padding: 5px 15p
 
 || Параметр |
 ---|---
-Соединение: | <span id="p0" class="code">Название</span>
-Сервер: | <span id="p1" class="code">Адрес</span>
-Имя пользователя: | <span id="p2" class="code">VPN логин</span>
-Пароль: | <span id="p3" class="code">VPN пароль</span>
+Соединение: | <span id="p0">Название</span>
+Сервер: | <span id="p1">Адрес</span>
+Имя пользователя: | <span id="p2">VPN логин</span>
+Пароль: | <span id="p3">VPN пароль</span>
 
 Пароль можно сохранить, если доступ к компьютеру имеете только Вы.
 
@@ -89,12 +90,13 @@ background-color: brown; color: yellow; font-family: monospace; padding: 5px 15p
 
 У Вас MacBook? Для Вас отдельная [инструкция][macos].
 
-Нажмите клавиши **Win+R** ([где это?][WinR]) и введите в поле Выполнить:
+Нажмите клавиши **Win+R** ([где это?][WinR]) и введите (скопируйте отсюда)
+в поле Выполнить:
 
-<span id="p4" class="code">mstsc /v:Шлюз...</span>
+<span id="p4">mstsc /v:Шлюз</span>
 
 **Обратите внимание, что в этой строке есть пробел перед косой чертой и она
-именно с таким наклоном**
+именно с таким наклоном.**
 
 [![th-run]][pic-run] #5
 
@@ -116,8 +118,8 @@ background-color: brown; color: yellow; font-family: monospace; padding: 5px 15p
 
 || Параметр |
 ---|---
-Имя пользователя: | <span id="p5" class="code">Ваш логин</span>
-Пароль: | <span id="p6" class="code">Ваш пароль</span>
+Имя пользователя: | <span id="p5">Ваш логин</span>
+Пароль: | <span id="p6">Ваш пароль</span>
 
 Здесь пароль лучше никогда не сохранять, так как это уже Ваше рабочее место
 с Вашими рабочими документами. Все, что вдруг пропадет по каким-то причинам,
