@@ -9,7 +9,8 @@
 подставились  
 <span id="pt" class="code">параметры</span>:
 
-<script>function calc(){
+<script>function calc(btn){
+btn.innerHTML='Готово!';
 var x=/(.+)@(..(.+)\..+)/;
 var e=document.getElementById("email").value;
 document.getElementById("pt").innerHTML='Ваши параметры';
@@ -27,7 +28,7 @@ document.getElementById("p6").innerHTML='Ваш пароль ***';
 <style>.code {
 background-color: brown; color: yellow; font-family: monospace; padding: 5px 15px;
 }</style>
-<input type="text" size="30" id="email" /><button onClick="calc();">Готово!</button>
+<input type="text" size="30" id="email" /><button onClick="calc(this);">Ввод</button>
 
 Также Вам надо узнать в ИТ-отделе назначенный Вам **VPN пароль** и **Общий ключ**.  
 А **Ваш пароль** от рабочего компьютера должны знать Вы сами.
