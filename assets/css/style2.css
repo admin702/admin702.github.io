@@ -12,3 +12,5 @@
   span a {color: #000; }
   ul { list-style-image: none; }
 }
+
+th { display: none; }
