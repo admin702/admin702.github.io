@@ -13,5 +13,8 @@
   ul { list-style-image: none; }
 }
 
-th { display: none; }
-tr, td { border: 0; }
+.markdown-body table tr { border-top: 0; }
+.markdown-body table tr:nth-child(2n) { background-color: initial; }
+
+.markdown-body table th { display: none; }
+.markdown-body table td { border: 0; }
