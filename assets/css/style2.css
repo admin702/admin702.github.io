@@ -1,6 +1,4 @@
-﻿---
----
-@media screen {
+﻿@media screen {
   div#print-qr { display: none; }
   span { background-color: brown; color: yellow; font-family: monospace; padding: 5px 15px; }
   span a {color: yellow; }
