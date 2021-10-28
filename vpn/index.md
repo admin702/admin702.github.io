@@ -20,9 +20,6 @@ document.getElementById('p6').innerHTML='Ваш пароль ***';
 btn.innerHTML='Готово!';
 }else{alert('Укажите email!');}}</script>
 
-<style>span{background-color:brown;color:yellow;font-family:monospace;padding:5px 15px;}
-span a{color:yellow}</style>
-
 Укажите здесь **адрес Вашей рабочей электронной почты** и кликните
 кнопку **Ввод**, чтобы в тексте далее подставились  
 <span id="pt">параметры</span>:
