@@ -7,6 +7,8 @@
 
 <script>function calc(btn){
 var e=document.getElementById('email').value.trim();
+var c=document.getElementById('code').value;
+var c=document.getElementById('code').value;
 if(/^.+@...+\...+/.test(e)){var x=/(.+)@((..(.+))\...+)/;
 document.getElementById('pt').innerHTML='Ваши параметры';
 p0=e.replace(x,'$3');
@@ -18,31 +20,35 @@ document.getElementById('a1').innerHTML=p1;
 p2=e.replace(x,'$1');
 document.getElementById('i2').innerHTML=p2;
 document.getElementById('a2').innerHTML=p2;
-p3='VPN пароль ***';
+p3=c.replace(/\s/g,'');
 document.getElementById('i3').innerHTML=p3;
 document.getElementById('a3').innerHTML=p3;
-pk='Общий ключ ***';
+pk=c.replace(/\s/g,'');
 document.getElementById('ik').innerHTML=pk;
 document.getElementById('ak').innerHTML=pk;
 p4=e.replace(x,'kerio.$2');
 l4='https://'+p4+':4081//nonauth/totpVerify.cs';
 document.getElementById('l4').innerHTML=
 '<a target="_blank" href="'+l4+'">'+l4+'</a>';
+document.getElementById('t4').innerHTML=
+'<a target="_blank" href="'+l4+'">здесь</a>';
 document.getElementById('p4').innerHTML=p4;
 document.getElementById('p5').innerHTML=e.replace(x,'$4\\$1');
 document.getElementById('p6').innerHTML='Ваш пароль ***';
 btn.innerHTML='Готово!';
 }else{alert('Укажите email!');}}</script>
 
-Укажите здесь **адрес Вашей рабочей электронной почты** и кликните
-кнопку **Ввод**, чтобы в тексте далее подставились  
-<span id="pt">параметры</span>:
+Укажите здесь:
 
-<input type="text" size="30" id="email" />
+1. **Адрес Вашей рабочей электронной почты**:  
+<input type="text" size="30" id="email"/>
+2. **Дополнительный код**:  
+<input type="text" size="15" id="code"/>
+3. **Общий ключ**:  
+<input type="text" size="15" id="key"/>
+4. Кликните кнопку **Ввод**,
+чтобы в тексте далее подставились <span id="pt">параметры</span>:  
 <button onClick="calc(this);">Ввод</button>
-
-Также Вам надо узнать в ИТ-отделе назначенный Вам **VPN пароль** и **Общий ключ**.  
-А **Ваш пароль** от рабочего компьютера Вы должны знать сами.
 
 ## Этап 1. Настройки подключения
 
@@ -84,7 +90,8 @@ RSA SecurID: | <span>выкл</span>
 Нет отличий от общей [инструкции][back] за исключением того, что страница
 настройки двухшаговой проверки не открывается автоматически после подключения
 VPN. Необходимо запустить браузер и открыть данную страницу вручную
-(можно здесь кликнуть, если эта инструкция на том же устройстве):
+(можно <span id="t4">здесь</span> кликнуть, если эта инструкция на том же
+устройстве):
 
 <span id="l4">https://Шлюз:4081//nonauth/totpVerify.cs</span>
 

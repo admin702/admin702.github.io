@@ -6,28 +6,29 @@
 Редакция: {{ 'now' | date: "%Y-%m-%d" }}
 
 <script>function calc(btn){
-var e=document.getElementById('email').value;
+var e=document.getElementById('email').value.trim();
+var c=document.getElementById('code').value;
 if(/^.+@...+\...+/.test(e)){var x=/(.+)@((..(.+))\...+)/;
 document.getElementById('pt').innerHTML='Ваши параметры';
 document.getElementById('p0').innerHTML=e.replace(x,'$3');
 document.getElementById('p1').innerHTML=e.replace(x,'mail.$2');
 document.getElementById('p2').innerHTML=e.replace(x,'$1');
-document.getElementById('p3').innerHTML='VPN пароль ***';
+document.getElementById('p3').innerHTML=c.replace(/\s/g,'');
 document.getElementById('p4').innerHTML=e.replace(x,'kerio.$2');
 document.getElementById('p5').innerHTML=e.replace(x,'$4\\$1');
 document.getElementById('p6').innerHTML='Ваш пароль ***';
 btn.innerHTML='Готово!';
 }else{alert('Укажите email!');}}</script>
 
-Укажите здесь **адрес Вашей рабочей электронной почты** и кликните
-кнопку **Ввод**, чтобы в тексте далее подставились  
-<span id="pt">параметры</span>:
+Укажите здесь:
 
-<input type="text" size="30" id="email" />
+1. **Адрес Вашей рабочей электронной почты**:  
+<input type="text" size="30" id="email"/>
+2. **Дополнительный код**:  
+<input type="text" size="15" id="code"/>
+3. Кликните кнопку **Ввод**,
+чтобы в тексте далее подставились <span id="pt">параметры</span>:  
 <button onClick="calc(this);">Ввод</button>
-
-Также Вам надо узнать в ИТ-отделе назначенный Вам **VPN пароль**.  
-А **Ваш пароль** от рабочего компьютера Вы должны знать сами.
 
 ## Этап 1. Программа подключения
 

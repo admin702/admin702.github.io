@@ -6,14 +6,17 @@
 Выберите там дистрибутив, соответствующий Вашей системе:
 
 * Windows 32-bit
-* Windows 64-bit
+* Windows 64-bit (наиболее частый случай на удаленке - показан на картинке
+ниже стрелочкой для примера)
 * MacOS
+* Linux
 
-![pic-download]
+И кликните **DOWNLOAD UPDATE** для загрузки программы.
+Ниже дана картинка для примера - не пытайтесь кликать по ней.
 
-Кликните **DOWNLOAD UPDATE** (не на картинке здесь, а там,
-где [загрузки][download]) и скачайте файл.
-Установите его.
+[![pic-download]][download]
+
+Установите скачанную программу.
 
 Если Ваша система Windows 8.1, то для установки потребуется загрузиться в
 режиме отключенной проверки подписей драйверов. В Windows 10 это не требуется.
@@ -22,7 +25,7 @@
 
 [Назад][back]
 
-[download]: https://www.gfi.com/products-and-solutions/network-security-solutions/kerio-control/resources/other-downloads/vpn
+[download]: https://www.gfi.com/products-and-solutions/network-security-solutions/kerio-control/resources/other-downloads/vpn?sc_lang=ru-ru
 [back]: /vpn "Основная инструкция"
 
 [pic-download]: /assets/img/download.png "Kerio VPN Client"

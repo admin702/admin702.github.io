@@ -7,7 +7,7 @@ permalink: /vpn/
 Редакция: {{ 'now' | date: "%Y-%m-%d" }}
 
 <script>function calc(btn){
-var e=document.getElementById('email').value;
+var e=document.getElementById('email').value.trim();
 var c=document.getElementById('code').value;
 if(/^.+@...+\...+/.test(e)){var x=/(.+)@((..(.+))\...+)/;
 document.getElementById('pt').innerHTML='Ваши параметры';
