@@ -79,7 +79,7 @@ Desktop**.
 |||
 ---|---
 Username: | <span id="p5">Ваш логин</span>
-Password: | <span id="p6">Ваш пароль</span>
+Password: | <span id="p6">Ваш пароль</span> (Его знаете только Вы!)
 
 ![pic-user2-mac]
 
