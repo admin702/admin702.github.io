@@ -8,7 +8,7 @@
 <script>function calc(btn){
 var e=document.getElementById('email').value.trim();
 var c=document.getElementById('code').value;
-var k=document.getElementById('code').value;
+var k=document.getElementById('key').value;
 if(/^.+@...+\...+/.test(e)){var x=/(.+)@((..(.+))\...+)/;
 document.getElementById('pt').innerHTML='Ваши параметры';
 p0=e.replace(x,'$3');
