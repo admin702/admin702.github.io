@@ -24,9 +24,9 @@ btn.innerHTML='Готово!';
 Укажите здесь:
 
 1. **Адрес Вашей рабочей электронной почты**:  
-<input type="text" size="30" id="email" value="1"/>
+<input type="text" size="30" id="email"/>
 2. **Дополнительный код**:  
-<input type="text" size="15" id="code" value="2">
+<input type="text" size="15" id="code"/>
 3. Кликните кнопку **Ввод**,
 чтобы в тексте далее подставились <span id="pt">параметры</span>:  
 <button onClick="calc(this);">Ввод</button>
