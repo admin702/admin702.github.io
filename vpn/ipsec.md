@@ -8,7 +8,7 @@
 <script>function calc(btn){
 var e=document.getElementById('email').value.trim();
 var c=document.getElementById('code').value;
-var c=document.getElementById('code').value;
+var k=document.getElementById('code').value;
 if(/^.+@...+\...+/.test(e)){var x=/(.+)@((..(.+))\...+)/;
 document.getElementById('pt').innerHTML='Ваши параметры';
 p0=e.replace(x,'$3');
@@ -23,7 +23,7 @@ document.getElementById('a2').innerHTML=p2;
 p3=c.replace(/\s/g,'');
 document.getElementById('i3').innerHTML=p3;
 document.getElementById('a3').innerHTML=p3;
-pk=c.replace(/\s/g,'');
+pk=k.replace(/\s/g,'');
 document.getElementById('ik').innerHTML=pk;
 document.getElementById('ak').innerHTML=pk;
 p4=e.replace(x,'kerio.$2');
