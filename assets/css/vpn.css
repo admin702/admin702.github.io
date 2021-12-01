@@ -8,7 +8,7 @@
   body { background-color: #fff; color: #000; }
   div#print-qr { float: right; position: absolute; right: 0; top: 0; }
   h1, h2, h3, h4, h5, h6, p, a { color: #000; }
-  span { background-color: #fff; color: #000; font-family: monospace; padding: 5px 15px; }
+  span { background-color: #fff; border: 1px solid; color: #000; font-family: monospace; font-weight: bold; padding: 5px 15px; }
   span a {color: #000; }
   ul { list-style-image: none; }
 }
