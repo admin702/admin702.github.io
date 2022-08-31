@@ -5,6 +5,11 @@
 Здесь собраны отличия от общей [инструкции][back].  
 Редакция: {{ 'now' | date: "%Y-%m-%d" }}
 
+По этой инструкции можно не устанавливать дополнительного клиента VPN,
+но придется запускать web-страницу для подтверждения входа вручную.
+
+Также здесь надо дополнительно знать **Общий ключ**.
+
 <script>function calc(btn){
 var e=document.getElementById('email').value.trim();
 var c=document.getElementById('code').value;
@@ -12,18 +17,28 @@ var k=document.getElementById('key').value;
 if(/^.+@...+\...+/.test(e)){var x=/(.+)@((..(.+))\...+)/;
 document.getElementById('pt').innerHTML='Ваши параметры';
 p0=e.replace(x,'$3');
+document.getElementById('w0').innerHTML=p0;
+document.getElementById('m0').innerHTML=p0;
 document.getElementById('i0').innerHTML=p0;
 document.getElementById('a0').innerHTML=p0;
 p1=e.replace(x,'mail.$2');
+document.getElementById('w1').innerHTML=p1;
+document.getElementById('m1').innerHTML=p1;
 document.getElementById('i1').innerHTML=p1;
 document.getElementById('a1').innerHTML=p1;
 p2=e.replace(x,'$1');
+document.getElementById('w2').innerHTML=p2;
+document.getElementById('m2').innerHTML=p2;
 document.getElementById('i2').innerHTML=p2;
 document.getElementById('a2').innerHTML=p2;
 p3=c.replace(/\s/g,'');
+document.getElementById('w3').innerHTML=p3;
+document.getElementById('m3').innerHTML=p3;
 document.getElementById('i3').innerHTML=p3;
 document.getElementById('a3').innerHTML=p3;
 pk=k.replace(/\s/g,'');
+document.getElementById('wk').innerHTML=pk;
+document.getElementById('mk').innerHTML=pk;
 document.getElementById('ik').innerHTML=pk;
 document.getElementById('ak').innerHTML=pk;
 p4=e.replace(x,'kerio.$2');
@@ -52,7 +67,7 @@ btn.innerHTML='Готово!';
 
 ## Этап 1. Настройки подключения
 
-### Microsoft Windows 11
+### Microsoft Windows (на примере 11)
 
 Это вариант иной настройки, только если не получилось по основной [инструкции][back].
 
@@ -63,13 +78,13 @@ btn.innerHTML='Готово!';
 |||
 ---|---
 Поставщик услуг VPN: | <span>Windows (встроенные)</span>
-Имя подключения: | <span id="i0">Название</span>
-Имя или адрес сервера: | <span id="i1">Адрес</span>
+Имя подключения: | <span id="w0">Название</span>
+Имя или адрес сервера: | <span id="w1">Адрес</span>
 Тип VPN: | <span>L2TP/IPsec с общим ключом</span>
-Общий ключ: | <span id="ik">Общий ключ</span>
+Общий ключ: | <span id="wk">Общий ключ</span>
 Тип данных для входа: | <span>Имя пользователя и пароль</span>
-Имя пользователя (необязательно): | <span id="i2">VPN логин</span>
-Пароль (необязательно): | <span id="i3">VPN пароль</span>
+Имя пользователя (необязательно): | <span id="w2">VPN логин</span>
+Пароль (необязательно): | <span id="w3">VPN пароль</span>
 
 <span>x</span> Запомнить мои данные для входа
 
@@ -87,15 +102,15 @@ btn.innerHTML='Готово!';
 ---|---
 Интерфейс: | <span>VPN</span>
 Тип VPN: | <span>L2TP через IPSec</span>
-Имя службы: | <span id="i0">Название</span>
+Имя службы: | <span id="m0">Название</span>
 
 Для новой службы Сети:
 
 |||
 ---|---
 Конфигурация: | <span>По умолчанию</span>
-Адрес сервера: | <span id="i1">Адрес</span>
-Имя учетной записи: | <span id="i2">VPN логин</span>
+Адрес сервера: | <span id="m1">Адрес</span>
+Имя учетной записи: | <span id="m2">VPN логин</span>
 
 Кнопка <span>Настройки аутентификации...</span>
 
@@ -103,13 +118,13 @@ btn.innerHTML='Готово!';
 
 |||
 ---|---
-Пароль: | <span id="i3">VPN пароль</span>
+Пароль: | <span id="m3">VPN пароль</span>
 
 Аутентификация компьютера:
 
 |||
 ---|---
-Общий ключ (Shared Secret): | <span id="ik">Общий ключ</span>
+Общий ключ (Shared Secret): | <span id="mk">Общий ключ</span>
 
 Затем кнопки <span>Применить</span>, <span>Подключить</span>.
 Рекомендуется поставить галочку у "Показывать статус VPN в строке меню"
@@ -157,8 +172,8 @@ RSA SecurID: | <span>выкл</span>
 Нет отличий от общей [инструкции][back] за исключением того, что страница
 настройки двухшаговой проверки не открывается автоматически после подключения
 VPN. Необходимо запустить браузер и открыть данную страницу вручную
-(можно <span id="t4">здесь</span> кликнуть, если эта инструкция на том же
-устройстве):
+(можно кликнуть <span id="t4">здесь</span>, если страница с этой инструкцией
+открыта прямо на устройстве, которое Вы хотите подключить):
 
 <span id="l4">https://Шлюз:4081//nonauth/totpVerify.cs</span>
 
@@ -180,6 +195,8 @@ VPN. Необходимо запустить браузер и открыть д
 Пароль: | <span id="p6">Ваш пароль</span> (Его знаете только Вы!)
 
 Если у Вас MacBook - посмотрите картинки Этапа 3 в отдельной [инструкции][macos].
+
+Если у Вас Windows - посмотрите картинки Этапа 3 в основной [инструкции][back].
 
 ---
 
