@@ -1,6 +1,6 @@
 ---
 ---
-# Настройка стандартных клиентов IPSec
+# Настройка стандартного клиента IPSec на Макбуке
 
 Здесь собраны отличия от общей [инструкции][back].  
 Редакция: {{ 'now' | date: "%Y-%m-%d" }}
@@ -10,9 +10,6 @@
 
 Также здесь надо дополнительно знать **Общий ключ**.
 
-У Вас MacBook? Для Вас отдельная [инструкция][ipsec-mac].  
-У Вас Windows? Для Вас отдельная [инструкция][ipsec-win].
-
 <script>function calc(btn){
 var e=document.getElementById('email').value.trim();
 var c=document.getElementById('code').value;
@@ -20,20 +17,15 @@ var k=document.getElementById('key').value;
 if(/^.+@...+\...+/.test(e)){var x=/(.+)@((..(.+))\...+)/;
 document.getElementById('pt').innerHTML='Ваши параметры';
 p0=e.replace(x,'$3');
-document.getElementById('i0').innerHTML=p0;
-document.getElementById('a0').innerHTML=p0;
+document.getElementById('m0').innerHTML=p0;
 p1=e.replace(x,'mail.$2');
-document.getElementById('i1').innerHTML=p1;
-document.getElementById('a1').innerHTML=p1;
+document.getElementById('m1').innerHTML=p1;
 p2=e.replace(x,'$1');
-document.getElementById('i2').innerHTML=p2;
-document.getElementById('a2').innerHTML=p2;
+document.getElementById('m2').innerHTML=p2;
 p3=c.replace(/\s/g,'');
-document.getElementById('i3').innerHTML=p3;
-document.getElementById('a3').innerHTML=p3;
+document.getElementById('m3').innerHTML=p3;
 pk=k.replace(/\s/g,'');
-document.getElementById('ik').innerHTML=pk;
-document.getElementById('ak').innerHTML=pk;
+document.getElementById('mk').innerHTML=pk;
 p4=e.replace(x,'kerio.$2');
 l4='https://'+p4+':4081//nonauth/totpVerify.cs';
 document.getElementById('l4').innerHTML=
@@ -60,38 +52,45 @@ btn.innerHTML='Готово!';
 
 ## Этап 1. Настройки подключения
 
-### Apple iOS, iPadOS (планшеты iPad)
+### Apple macOS (Макбуки)
 
-Настройки – VPN – Добавить конфигурацию VPN...
+Это вариант иной настройки, если не получилось по той [инструкции][macos].
 
-|||
----|---
-Тип: | <span>L2TP</span>
-Описание: | <span id="i0">Название</span>
-Сервер: | <span id="i1">Адрес</span>
-Учетная запись: | <span id="i2">VPN логин</span>
-RSA SecurID: | <span>выкл</span>
-Пароль: | <span id="i3">VPN пароль</span>
-Общий ключ: | <span id="ik">Общий ключ</span>
-Для всех данных: | <span>выкл</span>
+Системные настройки – Сеть - <span>+</span> (слева внизу) - VPN
 
-### Google Android
-
-Настройки – Беспроводные сети – VPN – Добавить сеть VPN
+Выберите интерфейс и введите имя для новой службы.
 
 |||
 ---|---
-Имя: | <span id="a0">Название</span>
-Тип: | <span>L2TP/IPSec PSK</span>
-Сервер: | <span id="a1">Адрес</span>
-Общий ключ IPSec: | <span id="ak">Общий ключ</span>
+Интерфейс: | <span>VPN</span>
+Тип VPN: | <span>L2TP через IPSec</span>
+Имя службы: | <span id="m0">Название</span>
+
+Для новой службы Сети:
 
 |||
 ---|---
-Имя пользователя: | <span id="a2">VPN логин</span>
-Пароль: | <span id="a3">VPN пароль</span>
+Конфигурация: | <span>По умолчанию</span>
+Адрес сервера: | <span id="m1">Адрес</span>
+Имя учетной записи: | <span id="m2">VPN логин</span>
 
-<span>x</span> Сохранить учетные данные
+Кнопка <span>Настройки аутентификации...</span>
+
+Аутентификация пользователя:
+
+|||
+---|---
+Пароль: | <span id="m3">VPN пароль</span>
+
+Аутентификация компьютера:
+
+|||
+---|---
+Общий ключ (Shared Secret): | <span id="mk">Общий ключ</span>
+
+Затем кнопки <span>Применить</span>, <span>Подключить</span>.
+Рекомендуется поставить галочку у "Показывать статус VPN в строке меню"
+для удобства подключения и отключения.
 
 ## Этап 2. Двухшаговая проверка
 
@@ -110,24 +109,50 @@ VPN. Необходимо запустить браузер и открыть д
 
 ## Этап 3. Удаленный рабочий стол
 
-Установить **Microsoft Remote Desktop** -  
-[Читать о нем для разных платформ на сайте Microsoft.][RD clients]
+В MacOS нет встроенной программы подключения к удаленному рабочему столу
+Windows. Рекомендуется установить бесплатную программу **Microsoft Remote
+Desktop**.
 
-А затем ввести адрес шлюза подключения и учетные данные Вашего рабочего
-компьютера (как на работе):
+Ввести в поле "PC name": <span id="p4">Шлюз</span>
+
+![pic-rdp-mac]
+
+А затем учетные данные Вашего рабочего компьютера (как на работе):
 
 |||
 ---|---
-Имя компьютера: | <span id="p4">Шлюз</span>
-Имя пользователя: | <span id="p5">Ваш логин</span>
-Пароль: | <span id="p6">Ваш пароль</span> (Его знаете только Вы!)
+Username: | <span id="p5">Ваш логин</span>
+Password: | <span id="p6">Ваш пароль</span> (Его знаете только Вы!)
+
+![pic-user2-mac]
+
+На вопрос о доверии к сертификату удаленного компьютера отвечайте "Continue":
+
+![pic-pc2-mac]
+
+Теперь должен открыться Ваш удаленный рабочий стол в окне или в полный экран.
+Вы сделали это!
+
+![pic-desktop-mac]
+
+## Как завершить работу
+
+Закрыть окно удаленного рабочего стола и кликнуть значок VPN в верхней
+служебной строке, выбрать в меню "Отключить":
+
+![pic-disconnect-mac]
 
 ---
 
 [Назад][back]
 
 [2fa]: /vpn/2fa "Настройка двухшаговой проверки"
-[ipsec-mac]: /vpn/ipsec-mac "IPSec на Макбуках"
-[ipsec-win]: /vpn/ipsec-win "IPSec на Windows"
+[macos]: /vpn/macos "На Макбуках"
 [RD clients]: https://docs.microsoft.com/ru-ru/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients "Клиенты RDP"
 [back]: /vpn "Основная инструкция"
+
+[pic-rdp-mac]: /assets/img/rdp-mac.png "Как добавить новый PC"
+[pic-user2-mac]: /assets/img/user2-mac.png "Как ввести учетные данные"
+[pic-pc2-mac]: /assets/img/pc2-mac.png "Как игнорировать предупреждение"
+[pic-desktop-mac]: /assets/img/desktop-mac.png "Удаленный рабочий стол Windows"
+[pic-disconnect-mac]: /assets/img/disconnect-mac.png "Меню отключения в VPN"
