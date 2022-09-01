@@ -32,6 +32,9 @@ document.getElementById('l4').innerHTML=
 '<a target="_blank" href="'+l4+'">'+l4+'</a>';
 document.getElementById('t4').innerHTML=
 '<a target="_blank" href="'+l4+'">здесь</a>';
+r4='https://10.189.165.1:4081//nonauth/totpVerify.cs';
+document.getElementById('r4').innerHTML=
+'<a target="_blank" href="'+r4+'">'+r4+'</a>';
 document.getElementById('p4').innerHTML=p4;
 document.getElementById('p5').innerHTML=e.replace(x,'$4\\$1');
 document.getElementById('p6').innerHTML='Ваш пароль ***';
@@ -52,7 +55,7 @@ btn.innerHTML='Готово!';
 
 ## Этап 1. Настройки подключения
 
-### Microsoft Windows 11
+### Microsoft Windows 10, 11
 
 Это вариант иной настройки, только если не получилось по основной [инструкции][back].
 
@@ -105,7 +108,7 @@ VPN. Необходимо запустить браузер и открыть д
 Если не получается, то попробуйте эту ссылку и проигнорируйте предупреждения
 системы безопасности браузера, что у этого сайта не соответствует сертификат:
 
-<span>https://10.189.165.1:4081//nonauth/totpVerify.cs</span>
+<span id="r4">https://10.189.165.1:4081//nonauth/totpVerify.cs</span>
 
 Далее настроить двухшаговую проверку по [инструкции][2fa] и сохранить
 на 30 дней. Сохраните эту страницу в закладках или ярлык на Рабочем столе,
@@ -175,6 +178,10 @@ VPN. Необходимо запустить браузер и открыть д
 
 [2fa]: /vpn/2fa "Настройка двухшаговой проверки"
 [WinR]: win-r "Где найти Win+R"
+[noreply]: noreply "Не удалось подключиться"
+[trust]: trust "О доверии"
+[pc2]: pc2 "О доверии"
+[exit]: exit "Завершение работы"
 [back]: /vpn "Основная инструкция"
 
 [th-run]: /assets/img/run_t.png
