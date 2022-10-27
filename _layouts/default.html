@@ -9,7 +9,13 @@
     <link rel="stylesheet" href="{{ '/assets/css/vpn.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
-    <div id="print-qr"><img src="https://chart.googleapis.com/chart?cht=qr&chs=100x100&choe=UTF-8&chl={{ site.url }}{{ page.url }}"></div>
+    <div id="print-qr"><img align="right" src="https://chart.googleapis.com/chart?cht=qr&chs=100x100&choe=UTF-8&chl={{ site.url }}{{ page.url }}">
+      <p><b>Обратите внимание:</b>
+      у Вас распечатанная инструкция, и на ней не действуют ссылки.
+      <br>Используйте QR-код справа, чтобы перейти к онлайн-версии или
+      введите адрес вручную:
+      <br><u>{{ site.url }}{{ page.url }}</u></p>
+    </div>
     <div class="container-lg px-3 my-5 markdown-body">
       <div><a href="/">admin702</a> объясняет:<hr /></div>
       {{ content }}
