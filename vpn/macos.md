@@ -12,7 +12,7 @@ if(/^.+@...+\...+/.test(e)){var x=/(.+)@((..(.+))\...+)/;
 document.getElementById('pt').innerHTML='Ваши параметры';
 document.getElementById('p0').innerHTML=e.replace(x,'$3');
 document.getElementById('p1').innerHTML=e.replace(x,'mail.$2');
-l1='https://$2/client/';
+l1=e.replace(x,'https://$2/client/');
 document.getElementById('l1').innerHTML=
 '<a target="_blank" href="'+l1+'">'+l1+'</a>';
 document.getElementById('p2').innerHTML=e.replace(x,'$1');
