@@ -1,9 +1,11 @@
---
---
+---
+---
 # Kerio Control VPN Client for Debian/Ubuntu Linux
 
 Kerio Control VPN Client is a tool for secure connection into a private network
-running Kerio Control on its Internet gateway. 
+running Kerio Control on its Internet gateway.
+
+Download it from [download][download]
 
 ## PREPARATION
 
@@ -101,4 +103,5 @@ Source tarball of the 'kvnet' module for a particular version is available at:
 
 [Назад][back]
 
+[download]: https://www.gfi.com/products-and-solutions/network-security-solutions/kerio-control/resources/other-downloads/vpn?sc_lang=ru-ru
 [back]: /vpn "Основная инструкция"
