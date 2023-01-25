@@ -13,6 +13,9 @@ if(/^.+@...+\...+/.test(e)){var x=/(.+)@((..(.+))\...+)/;
 document.getElementById('pt').innerHTML='Ваши параметры';
 document.getElementById('p0').innerHTML=e.replace(x,'$3');
 document.getElementById('p1').innerHTML=e.replace(x,'mail.$2');
+l1='https://$2/client/';
+document.getElementById('l1').innerHTML=
+'<a target="_blank" href="'+l1+'">'+l1+'</a>';
 document.getElementById('p2').innerHTML=e.replace(x,'$1');
 document.getElementById('p3').innerHTML=c.replace(/\s/g,'');
 document.getElementById('p4').innerHTML=e.replace(x,'mstsc /v:kerio.$2');
@@ -40,6 +43,7 @@ btn.innerHTML='Готово!';
 есть также отдельные дополнения для [Apple macOS][macos], есть альтернативные
 инструкции для IPSec в [Windows][ipsec-win], [macOS][ipsec-mac] и
 [других устройствах][IPSec].
+Есть инструкции по установке клиента для систем Debian и Ubuntu [Linux][linux].
 
 Все картинки кликабельны для увеличения. При обращении за помощью
 сообщайте номер картинки, на которой Вы застряли.
@@ -47,7 +51,8 @@ btn.innerHTML='Готово!';
 ## Этап 1. Программа подключения
 
 Для установки защищенного соединения между Вашим домашним и рабочим компьютером
-требуется программа **Kerio Control VPN Client** ([где взять?][download]).
+требуется программа **Kerio Control VPN Client** ([где взять?][download]
+<span id="l1">зеркало</span>).
 
 Установите, запустите и введите из Ваших учетных данных:
 
@@ -147,6 +152,7 @@ btn.innerHTML='Готово!';
 [VPN Calculator]: /VPN.html "Генератор параметров для VPN"
 [download]: download "Скачать"
 [macos]: macos "На Макбуках"
+[linux]: linux "На Linux"
 [IPSec]: ipsec "На планшетах"
 [ipsec-win]: ipsec-win "IPSec на Windows"
 [ipsec-mac]: ipsec-mac "IPSec на Макбуках"

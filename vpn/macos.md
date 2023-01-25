@@ -12,6 +12,9 @@ if(/^.+@...+\...+/.test(e)){var x=/(.+)@((..(.+))\...+)/;
 document.getElementById('pt').innerHTML='Ваши параметры';
 document.getElementById('p0').innerHTML=e.replace(x,'$3');
 document.getElementById('p1').innerHTML=e.replace(x,'mail.$2');
+l1='https://$2/client/';
+document.getElementById('l1').innerHTML=
+'<a target="_blank" href="'+l1+'">'+l1+'</a>';
 document.getElementById('p2').innerHTML=e.replace(x,'$1');
 document.getElementById('p3').innerHTML=c.replace(/\s/g,'');
 document.getElementById('p4').innerHTML=e.replace(x,'kerio.$2');
@@ -32,10 +35,14 @@ btn.innerHTML='Готово!';
 
 ## Этап 1. Программа подключения
 
+Для установки защищенного соединения между Вашим домашним и рабочим компьютером
+требуется программа **Kerio Control VPN Client** ([где взять?][download]
+<span id="l1">зеркало</span>).
+
 ### Устранение блокировки Kerio VPN
 
-После установки программы **Kerio Control VPN Client** по [инструкции][download],
-она в строке "Состояние" пишет об ошибке и не производит подключение.
+После установки, программа в строке "Состояние" пишет об ошибке и не
+производит подключение.
 Надо разблокировать (разрешить) ее в приложении "Системные настройки" -
 "Защита и безопасность":
 
