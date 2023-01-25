@@ -99,6 +99,6 @@ Source tarball of the 'kvnet' module for a particular version is available at:
 
 ---
 
-[Назад][back]
+[РќР°Р·Р°Рґ][back]
 
-[back]: /vpn "Основная инструкция"
+[back]: /vpn "РћСЃРЅРѕРІРЅР°СЏ РёРЅСЃС‚СЂСѓРєС†РёСЏ"
